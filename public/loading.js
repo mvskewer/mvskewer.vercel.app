@@ -15,11 +15,12 @@ const loadingDestroyerInterval = setInterval(() => {
         && loading.style.opacity == 0) {
         loading.remove();
         clearInterval(loadingDestroyerInterval);
+        console.log("destroyed loading screen thingy");
     }
 }, 3000);
 
 function setDone() {
     console.log(document.querySelector('#loading'));
-    document.querySelector("#loading").classList.add("done");
+    document.querySelector("#loading").classList.add("Home_done__0YePk"); // troll emoji
     console.log("done loading!");
 }
