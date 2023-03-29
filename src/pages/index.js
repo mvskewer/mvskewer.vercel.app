@@ -6,6 +6,12 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+const A = props => {
+  return (
+    <a href={props.href} className="anchor">{props.children}</a>
+  )
+}
+
   return (
     <>
       <Head>
@@ -16,16 +22,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-        <link rel="stylesheet" href="style.css" />
         <title>The Skewer</title>
       </Head>
-      {/* <div class="loading">
+      <div className={styles.loading} class="loading"> {/* what???? */}
         <p>loading...</p>
-      </div> */}
+      </div>
+      {/* show on load */}
+      <Script src="./loading.js"></Script>
 
-      <main id={styles.main}>
+      <div className={styles["particles-js"]}></div>
+      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+      <Script src="./particles.js"></Script>
 
-      </main>
+      <div className={styles.main}>
+        <h1 className={styles.title}>The Skewer</h1>
+        <h2 className={styles.title}>The offical website of The Skewer!</h2>
+        <hr />
+
+        <p><A href="articles">articles</A></p>
+        <p><A href="staff">about our staff</A></p>
+      </div>
     </>
   )
 }

@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
-#main {
+.particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main {
   width: 80%;
   margin: 0 auto;
   z-index: 0;
@@ -9,19 +16,12 @@
   font-family: 'Fira Code';
 }
 
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
 h1.title,
 h2.title {
   text-align: center;
 }
 
-a#main:not(:hover) {
+.main.anchor:not(:hover) {
   color: white;
   text-decoration: none;
   border-bottom: calc(var(--anchor-size) / 7) dotted;
@@ -29,7 +29,7 @@ a#main:not(:hover) {
   /* I still have no idea how this only takes like half a second but oh well */
 }
 
-a#main:hover {
+.main.anchor:hover {
   text-decoration: none;
   border-bottom-style: solid;
   /* 👀 */
