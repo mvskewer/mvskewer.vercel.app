@@ -26,7 +26,7 @@ export default function Home() {
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0X6T2X9WNM"></Script>
       <Script src="./gtag.js"></Script>
 
-      <div className={styles.loading} id="loading"> {/* what???? */}
+      <div className={[styles.loading, styles.center].join(" ")} id="loading"> {/* what???? */}
         <p>loading...</p>
       </div>
       {/* show on load */}
@@ -35,21 +35,34 @@ export default function Home() {
       <div className={styles["particles-js"]} id="particles-js"></div>
       <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
 
-      <div className={styles.main}>
+      <div className={styles.darkmode}>
         <Image
           src="./darkmode.svg"
           className={styles.darkmode}
           alt="dark mode toggle"
           width="50"
           height="50"
+          id="darkmode-svg"
         ></Image>
+        <div className={[styles.blur, styles.center, styles.hidden].join(" ")} id="blur"></div>
+        <div
+          className={[styles.darkmode, styles.hidden, styles["darkmode-msg"], styles.center].join(" ")}
+          id="darkmode-msg"
+        >
+          <p>loading light mode css...</p>
+        </div>
         <Script src="./darkmode.js"></Script>
+      </div>
+
+      <div className={styles.main}>
         <h1 className={styles.title}>The Skewer</h1>
         <h2 className={styles.title}>The offical website of The Skewer!</h2>
         <hr />
 
-        <p><A href="articles">articles</A></p>
-        <p><A href="staff">about our staff</A></p>
+        <div className={styles.page}>
+          <p><A href="articles">articles</A></p>
+          <p><A href="staff">about our staff</A></p>
+        </div>
       </div>
     </>
   )
