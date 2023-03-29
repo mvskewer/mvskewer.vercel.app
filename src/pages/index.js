@@ -1,45 +1,47 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const particlesInit = useCallback(async engine => {
-    console.log(engine);
-    // initialize...
-
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async container => {
-    await console.log(container);
-  }, []);
+  const A = props => {
+    return (
+      <a href={props.href} className={styles.anchor}>{props.children}</a>
+    )
+  }
 
   return (
     <>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-        <link rel="stylesheet" href="style.css" />
         <title>The Skewer</title>
       </Head>
-      {/* <div class="loading">
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0X6T2X9WNM"></Script>
+      <Script src="./gtag.js"></Script>
+
+      <div className={styles.loading} id="loading"> {/* what???? */}
         <p>loading...</p>
-      </div> */}
+      </div>
+      {/* show on load */}
+      <Script src="./loading.js"></Script>
 
-      <Particles id="tsparticles" url="/particles.json" init={particlesInit} loaded={particlesLoaded} />
+      <div className={styles["particles-js"]} id="particles-js"></div>
+      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
 
-      <main id={styles.main}>
+      <div className={styles.main}>
+        <h1 className={styles.title}>The Skewer</h1>
+        <h2 className={styles.title}>The offical website of The Skewer!</h2>
+        <hr />
 
-      </main>
+        <p><A href="articles">articles</A></p>
+        <p><A href="staff">about our staff</A></p>
+      </div>
     </>
   )
 }
