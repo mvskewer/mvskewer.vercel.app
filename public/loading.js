@@ -1,4 +1,4 @@
-document.addEventListener("readystatechange", async event => {
+document.addEventListener("readystatechange", event => {
     if (event.target.readyState === "complete") {
         setDone();
     }
@@ -19,8 +19,9 @@ const loadingDestroyerInterval = setInterval(() => {
     }
 }, 3000);
 
-function setDone() {
+async function setDone() {
     console.log(document.querySelector('#loading'));
     document.querySelector("#loading").classList.add("Home_done__0YePk"); // troll emoji
+    particlesJS('particles-js', await fetch('/particlesjs-config.json').then(res => res.json()));
     console.log("done loading!");
 }

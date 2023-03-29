@@ -22,7 +22,7 @@ h2.title {
   text-align: center;
 }
 
-.main.anchor:not(:hover) {
+.anchor:not(:hover) {
   color: white;
   text-decoration: none;
   border-bottom: calc(1rem / 7) dotted;
@@ -30,7 +30,7 @@ h2.title {
   /* I still have no idea how this only takes like half a second but oh well */
 }
 
-.main.anchor:hover {
+.anchor:hover {
   text-decoration: none;
   border-bottom-style: solid;
   /* 👀 */
@@ -61,4 +61,5 @@ h2.title {
 .loading.done {
   opacity: 0;
   transition: 1s;
+  z-index: -9999;
 }
