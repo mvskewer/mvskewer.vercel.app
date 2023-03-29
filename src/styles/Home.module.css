@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 .particles-js {
   position: fixed;
@@ -65,4 +66,14 @@ h2.title {
   opacity: 0;
   transition: 1s;
   z-index: -9999;
+}
+
+img.darkmode {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+}
+
+p.darkmode {
+  font-family: 'Didact Gothic';
 }

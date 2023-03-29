@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -35,6 +36,13 @@ export default function Home() {
       <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
 
       <div className={styles.main}>
+        <Image
+          src="./darkmode.svg"
+          className={styles.darkmode}
+          alt="dark mode toggle"
+          width="50"
+          height="50"
+        ></Image>
         <h1 className={styles.title}>The Skewer</h1>
         <h2 className={styles.title}>The offical website of The Skewer!</h2>
         <hr />
