@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 .particles-js {
   position: fixed;
@@ -45,16 +46,17 @@ h2.title {
 }
 
 .loading {
+  background: #30303a;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.center {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #30303a;
-  z-index: 9999;
-  opacity: 1;
-
-  /* center stuff */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,4 +67,51 @@ h2.title {
   opacity: 0;
   transition: 1s;
   z-index: -9999;
+}
+
+
+.darkmode {
+  font-family: 'Didact Gothic'
+}
+
+img.darkmode {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+div.darkmode>p {
+  color: #000;
+}
+
+div.darkmode.hidden {
+  display: none !important;
+}
+
+img.darkmode:not(.hidden) {
+  z-index: 9998;
+}
+
+div.darkmode-msg:not(.hidden) {
+  z-index: 9997;
+}
+
+.blur {
+  display: flex;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  background-color: #ffffff88;
+}
+
+.blur.hidden {
+  display: none;
+  backdrop-filter: none;
+}
+
+/* --- */
+
+.page {
+  margin: 10px;
 }

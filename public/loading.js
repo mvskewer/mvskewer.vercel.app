@@ -8,10 +8,9 @@ if (document.readyState === "complete") setTimeout(setDone, 250); // in case eve
 
 // destroy hidden loading element because why not
 const loadingDestroyerInterval = setInterval(() => {
-    const loading = document.querySelector("#loading")
-        || document.querySelector("#loading-done");
+    const loading = document.querySelector("#loading");
 
-    if (loading.id.includes("done")
+    if (loading.className.includes("done")
         && loading.style.opacity == 0) {
         loading.remove();
         clearInterval(loadingDestroyerInterval);
@@ -20,7 +19,6 @@ const loadingDestroyerInterval = setInterval(() => {
 }, 3000);
 
 async function setDone() {
-    console.log(document.querySelector('#loading'));
     document.querySelector("#loading").classList.add("Home_done__0YePk"); // troll emoji
     particlesJS('particles-js', await fetch('/particlesjs-config.json').then(res => res.json()));
     console.log("done loading!");

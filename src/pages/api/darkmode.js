@@ -23,6 +23,7 @@ imply that the user should feel bad about choosing to switch from dark mode.`,
 const output = response.data.choices[0].text.replace(/^\n+/, "").replaceAll("\"", ""); // for some reason it really likes quotes
 
 export default function handler(req, res) {
+	res.setHeader('Cache-Control', 'no-store')
 	res.status(200).json({ output: output });
 	// console.log(response.data.choices.text);
 }
