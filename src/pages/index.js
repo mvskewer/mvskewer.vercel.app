@@ -43,6 +43,7 @@ export default function Home() {
           width="50"
           height="50"
         ></Image>
+        <Script src="./darkmode.js"></Script>
         <h1 className={styles.title}>The Skewer</h1>
         <h2 className={styles.title}>The offical website of The Skewer!</h2>
         <hr />
