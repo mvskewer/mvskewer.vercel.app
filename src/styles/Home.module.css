@@ -5,13 +5,14 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  background: #30303a
 }
 
 .main {
   width: 80%;
   margin: 0 auto;
   z-index: 0;
-  background: #30303a;
+  /* background: #30303a; */
   color: white;
   font-family: 'Fira Code';
 }
@@ -24,7 +25,7 @@ h2.title {
 .main.anchor:not(:hover) {
   color: white;
   text-decoration: none;
-  border-bottom: calc(var(--anchor-size) / 7) dotted;
+  border-bottom: calc(1rem / 7) dotted;
   transition: 50s;
   /* I still have no idea how this only takes like half a second but oh well */
 }
@@ -33,7 +34,31 @@ h2.title {
   text-decoration: none;
   border-bottom-style: solid;
   /* 👀 */
-  font-size: calc(var(--anchor-size) * 69);
-  border-bottom-width: calc(var(--anchor-size) * 10);
+  font-size: 69rem;
+  border-bottom-width: 10rem;
+
+  transition-property: font-size border-bottom-width;
   transition: calc(6969s / 7);
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #30303a;
+  z-index: 9999;
+  opacity: 1;
+
+  /* center stuff */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading.done {
+  opacity: 0;
+  transition: 1s;
 }
