@@ -4,7 +4,7 @@ document.addEventListener("readystatechange", event => {
     }
 });
 
-if (document.readyState === "complete") setDone(); // in case everything loads before this???
+if (document.readyState === "complete") setTimeout(setDone, 250); // in case everything loads before this???
 
 // destroy hidden loading element because why not
 const loadingDestroyerInterval = setInterval(() => {

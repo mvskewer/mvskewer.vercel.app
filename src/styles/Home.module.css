@@ -5,16 +5,19 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #30303a
+  background: #30303a;
+  top: 0;
 }
 
 .main {
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   z-index: 0;
   /* background: #30303a; */
   color: white;
   font-family: 'Fira Code';
+  overflow-y: hidden;
+  height: 80vh
 }
 
 h1.title,
