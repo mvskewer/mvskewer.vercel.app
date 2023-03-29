@@ -80,6 +80,7 @@ img.darkmode {
   width: 50px;
   top: 10px;
   left: 10px;
+  cursor: pointer;
 }
 
 div.darkmode>p {
