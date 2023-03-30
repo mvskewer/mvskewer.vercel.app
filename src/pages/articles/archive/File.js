@@ -3,14 +3,13 @@ import Link from 'next/link';
 
 const File = props => {
   return (
-    <li>
-      <Link
-        href={props.filename}
-        title={props.filename}
-        className={[styles.file, styles.pdf].join(" ")}
+    <li className={[styles.file, styles.pdf].join(" ")}>
+      <a
+        href={props.path}
+        title={props.name}
       >
         {props.children}
-      </Link>
+      </a>
     </li>
   );
 };
