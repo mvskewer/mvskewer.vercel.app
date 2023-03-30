@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <p>hi</p>
         <ul>
-          <File filename="February.pdf">hehasdheaef</File>
+          <File path="./February.pdf" name="February">hehasdheaef</File>
         </ul>
       </main>
     </>

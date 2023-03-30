@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -57,8 +56,8 @@ export default function Home() {
         </header>
 
         <div className={styles.page}>
-          <p><a href="articles">articles</a></p>
-          <p><a href="staff">about our staff</a></p>
+          <p><Link href="articles">articles</Link></p>
+          <p><Link href="staff">about our staff</Link></p>
         </div>
       </div>
     </>

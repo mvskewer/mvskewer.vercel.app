@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import styles from '@/styles/articles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       <main className={styles.body}>
         <div className={styles.main}>
           <p>articles!!!!!</p>
-          <a href="/articles/archive">archiveaaaa</a>
+          <Link href="/articles/archive">archiveaaaa</Link>
         </div>
       </main>
     </>
