@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 :root {
+  --background-color: #30303a;
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -95,9 +100,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-a {
-  color: inherit;
+a:not(:hover) {
+  color: white;
   text-decoration: none;
+  border-bottom: calc(1rem / 7) dotted;
+  transition: 50s;
+  /* I still have no idea how this only takes like half a second but oh well */
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom-style: solid;
+  /* 👀 */
+  font-size: 69rem;
+  border-bottom-width: 10rem;
+
+  transition-property: font-size border-bottom-width;
+  transition: calc(6969s / 7);
 }
 
 @media (prefers-color-scheme: dark) {

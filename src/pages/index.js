@@ -7,30 +7,25 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const A = props => {
-    return (
-      <a href={props.href} className={styles.anchor}>{props.children}</a>
-    )
-  }
-
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The official website of The Skewer - access our article archives, staff bios, and more!" />
 
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-        <title>The Skewer</title>
+        <title>Home | The Skewer</title>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0X6T2X9WNM"></Script>
-      <Script src="./gtag.js"></Script>
+      <Script src="/gtag.js"></Script>
 
       <div className={[styles.loading, styles.center].join(" ")} id="loading"> {/* what???? */}
         <p>loading...</p>
       </div>
       {/* show on load */}
-      <Script src="./loading.js"></Script>
+      <Script src="/loading.js"></Script>
 
       <div className={styles["particles-js"]} id="particles-js"></div>
       <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
@@ -55,13 +50,15 @@ export default function Home() {
       </div>
 
       <div className={styles.main}>
-        <h1 className={styles.title}>The Skewer</h1>
-        <h2 className={styles.title}>The offical website of The Skewer!</h2>
-        <hr />
+        <header>
+          <h1 className={styles.title}>The Skewer</h1>
+          <h2 className={styles.title}>The offical website of The Skewer!</h2>
+          <hr />
+        </header>
 
         <div className={styles.page}>
-          <p><A href="articles">articles</A></p>
-          <p><A href="staff">about our staff</A></p>
+          <p><a href="articles">articles</a></p>
+          <p><a href="staff">about our staff</a></p>
         </div>
       </div>
     </>

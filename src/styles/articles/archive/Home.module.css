@@ -1,0 +1,5 @@
+.main {
+    background: var(--background-color);
+    height: 100vh;
+    font-family: 'Fira Code';
+}

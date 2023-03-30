@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-
 .particles-js {
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #30303a;
+  background: var(--background-color);
   top: 0;
 }
 
 .main {
   width: 80%;
-  margin: 10px auto 0 auto;
+  margin: 20px auto 0 auto;
   z-index: 0;
-  /* background: #30303a; */
+  /* background: var(--background-color) */
   color: white;
   font-family: 'Fira Code';
   overflow-y: hidden;
@@ -24,29 +21,11 @@
 h1.title,
 h2.title {
   text-align: center;
-}
-
-.anchor:not(:hover) {
-  color: white;
-  text-decoration: none;
-  border-bottom: calc(1rem / 7) dotted;
-  transition: 50s;
-  /* I still have no idea how this only takes like half a second but oh well */
-}
-
-.anchor:hover {
-  text-decoration: none;
-  border-bottom-style: solid;
-  /* 👀 */
-  font-size: 69rem;
-  border-bottom-width: 10rem;
-
-  transition-property: font-size border-bottom-width;
-  transition: calc(6969s / 7);
+  padding: 10px;
 }
 
 .loading {
-  background: #30303a;
+  background: var(--background-color);
   z-index: 9999;
   opacity: 1;
 }
@@ -115,4 +94,5 @@ div.darkmode-msg:not(.hidden) {
 
 .page {
   margin: 10px;
+  line-height: 150%;
 }
