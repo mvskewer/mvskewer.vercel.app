@@ -1,15 +1,16 @@
 import styles from '@/styles/articles/archive/File.module.css'
+import Link from 'next/link';
 
 const File = props => {
   return (
     <li>
-      <a
+      <Link
         href={props.filename}
         title={props.filename}
         className={[styles.file, styles.pdf].join(" ")}
       >
         {props.children}
-      </a>
+      </Link>
     </li>
   );
 };
