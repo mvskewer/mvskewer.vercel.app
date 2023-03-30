@@ -50,9 +50,11 @@ export default function Home() {
       </div>
 
       <div className={styles.main}>
-        <h1 className={styles.title}>The Skewer</h1>
-        <h2 className={styles.title}>The offical website of The Skewer!</h2>
-        <hr />
+        <header>
+          <h1 className={styles.title}>The Skewer</h1>
+          <h2 className={styles.title}>The offical website of The Skewer!</h2>
+          <hr />
+        </header>
 
         <div className={styles.page}>
           <p><a href="articles">articles</a></p>

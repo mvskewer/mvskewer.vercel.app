@@ -43,5 +43,7 @@
 .main {
     z-index: 1;
     width: 80%;
+    height: 100vh;
     margin: 69px auto 0px auto;
+    overflow-y: hidden;
 }
