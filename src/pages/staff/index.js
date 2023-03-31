@@ -38,20 +38,20 @@ export default function Home() {
             <p>Co-Founder of the Skewer and Executive Editor. Spends more time working on the webstite than actually working on his articles.</p>
           </Bio>
           <Bio name="Amio Koivunen" img="amio-koivunen">
-            <p>Juanma's #1 fan</p>
+            <p>Juanma&apos;s #1 fan</p>
           </Bio>
           <Bio name="C. Real" img="c-real">
             <p>A former viewer writer, now a senior and not ready for life.</p>
           </Bio>
           <Bio name="Dr. Silly" img="dr-silly">
-            <p>"I am the fight reporter. I report on fights and sometimes rate them on the violence and the amount of people involved."</p>
+            <p>&quot;I am the fight reporter. I report on fights and sometimes rate them on the violence and the amount of people involved.&quot;</p>
           </Bio>
           <Bio name="Fullpetal Alchemist" img="fullpetal-alchemist">
-            <p>"Who am I, you ask?</p>
+            <p>&quot;Who am I, you ask?</p>
             <p>A poet, a journalist,</p>
-            <p>and sometimes funny."</p>
+            <p>and sometimes funny.&quot;</p>
             <br />
-            <p>It's our honor to have Fullpetal Alchemist, an esteemed poet and journalist, on our staff. They're known best for poetry published on their extremely popular Wattpad profile, <Link href="https://www.wattpad.com/user/BlessedBlossomBoi">BlessedBlossomBoi</Link>, and for their deep, insightful analysis of high school issues. They also take a passing interest in chess, school-scale news, and arguing about frivolous things in the debate section.</p>
+            <p>It&apos;s our honor to have Fullpetal Alchemist, an esteemed poet and journalist, on our staff. They&apos;re known best for poetry published on their extremely popular Wattpad profile, <Link href="https://www.wattpad.com/user/BlessedBlossomBoi">BlessedBlossomBoi</Link>, and for their deep, insightful analysis of high school issues. They also take a passing interest in chess, school-scale news, and arguing about frivolous things in the debate section.</p>
             <br />
             <p>You may challenge them to a game of chess here: <Link href="https://lichess.org/@/Stupidity">lichess.org/@/Stupdity</Link></p>
           </Bio>
