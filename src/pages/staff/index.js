@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import Link from 'next/link'
 import Bio from './Bio'
 import styles from '@/styles/staff/Home.module.css'
 
@@ -31,25 +32,31 @@ export default function Home() {
         </header>
         <div className={styles.page}>
           <Bio name="Yongle" img="yongle">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>Used to be the Emperor of the Ming Dynasty and is now the head of The Skewer.</p>
           </Bio>
           <Bio name="Torbjörn Roger Halsten Herman Adolfsson" img="torbjörn-roger-halsten-herman-adolfsson">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>Co-Founder of the Skewer and Executive Editor. Spends more time working on the webstite than actually working on his articles.</p>
           </Bio>
           <Bio name="Amio Koivunen" img="amio-koivunen">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>Juanma's #1 fan</p>
           </Bio>
           <Bio name="C. Real" img="c-real">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>A former viewer writer, now a senior and not ready for life.</p>
           </Bio>
           <Bio name="Dr. Silly" img="dr-silly">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>"I am the fight reporter. I report on fights and sometimes rate them on the violence and the amount of people involved."</p>
           </Bio>
           <Bio name="Fullpetal Alchemist" img="fullpetal-alchemist">
-            Used to be the Emperor of the Ming Dynasty and is now the head of the Skewer.
+            <p>"Who am I, you ask?</p>
+            <p>A poet, a journalist,</p>
+            <p>and sometimes funny."</p>
+            <br />
+            <p>It's our honor to have Fullpetal Alchemist, an esteemed poet and journalist, on our staff. They're known best for poetry published on their extremely popular Wattpad profile, <Link href="https://www.wattpad.com/user/BlessedBlossomBoi">BlessedBlossomBoi</Link>, and for their deep, insightful analysis of high school issues. They also take a passing interest in chess, school-scale news, and arguing about frivolous things in the debate section.</p>
+            <br />
+            <p>You may challenge them to a game of chess here: <Link href="https://lichess.org/@/Stupidity">lichess.org/@/Stupdity</Link></p>
           </Bio>
           <Bio name="J. Balvin" img="j-balvin">
-            among us
+            17, student, saxophone player, magic the gathering officianado, one piece addict.
           </Bio>
         </div>
       </div>

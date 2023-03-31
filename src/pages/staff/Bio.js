@@ -7,7 +7,7 @@ export default function Bio(props) {
     <>
       <Image src={`/staff/img/${props.img}.webp`} width="69" height="69" alt={`a picture of or for ${props.name}`} className={styles.img}></Image>
       <p><b>{props.name}</b></p>
-      <p>{props.children}</p>
+      {props.children}
       <br />
     </>
   );
