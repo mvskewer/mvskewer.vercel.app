@@ -12,7 +12,7 @@ export default function Home() {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="staff info page idk ***fill this out later***" />
-        <title>Articles | The Skewer</title>
+        <title>Staff | The Skewer</title>
       </Head>
 
       {/* loading + particles */}
