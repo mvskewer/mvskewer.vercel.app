@@ -40,7 +40,7 @@ export default function Home() {
           <Bio name="Amio Koivunen" img="amio-koivunen">
             <p>Juanma&apos;s #1 fan</p>
           </Bio>
-          <Bio name="C. Real" img="c-real">
+          <Bio name="C. Near" img="c-near">
             <p>A former viewer writer, now a senior and not ready for life.</p>
           </Bio>
           <Bio name="Dr. Silly" img="dr-silly">
