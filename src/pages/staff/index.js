@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Script from 'next/script'
 import Link from 'next/link'
-import Bio from './Bio'
+import Particles from '@/components/Particles'
+import Bio from '@/components/Bio'
 import styles from '@/styles/staff/Home.module.css'
 
 export default function Home() {
@@ -15,14 +15,7 @@ export default function Home() {
         <title>Staff | The Skewer</title>
       </Head>
 
-      {/* loading + particles */}
-      <div className={[styles.loading, styles.center].join(" ")} id="loading">
-        <p>loading...</p>
-      </div>
-      <Script src="/staff/loading.js"></Script> {/* THIS IS A TEMPORARY WORKAROUND */}
-      <div className={styles["particles-js"]} id="particles-js"></div>
-      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
-      {/* end section!!!!!!!!!*/}
+      <Particles />
 
       <div className={styles.main}>
         <header>

@@ -9,13 +9,24 @@ svg.addEventListener("click", async () => {
     await insult();
 })
 
+let loadingDotsInterval;
+
 async function insult() {
     console.log(darkmode);
     if (darkmode) {
-        const insult = await fetch('/api/darkmode').then(res => res.json());
-        msg.querySelector('p').innerText = insult.output;
+        clearInterval(loadingDotsInterval);
+        const insult = await fetch('/api/darkmode').then(res => parseRes(res));
+        if (!("error" in insult)) {
+            msg.querySelector('p').innerText = insult.output;
+        } else {
+            msg.querySelector('p').innerHTML = insult.output;
+        }
     } else {
-        msg.querySelector('p').innerText = "loading light mode css...";
+        let i = 0;
+        loadingDotsInterval = setInterval(() => {
+            msg.querySelector('p').innerText = `loading light mode css${".".repeat(i)}`;
+            if (++i > 3) i = 0; // hehe
+        }, 200);
     }
 }
 
@@ -28,4 +39,14 @@ function handleBlur() {
         msg.classList.add("Home_hidden__vKntZ");
         blurry.classList.add("Home_hidden__vKntZ");
     }
+}
+
+async function parseRes(res) {
+    if (res.status === 200)
+        return res.json();
+    else
+        return {
+            error: res.status,
+            output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened!`
+        }
 }

@@ -3,6 +3,7 @@ import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
+import Particles from '@/components/Particles'
 
 
 export default function Home() {
@@ -20,14 +21,7 @@ export default function Home() {
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0X6T2X9WNM"></Script>
       <Script src="/gtag.js"></Script>
 
-      <div className={[styles.loading, styles.center].join(" ")} id="loading"> {/* what???? */}
-        <p>loading...</p>
-      </div>
-      {/* show on load */}
-      <Script src="/loading.js"></Script>
-
-      <div className={styles["particles-js"]} id="particles-js"></div>
-      <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+      <Particles />
 
       <div className={styles.darkmode}>
         <Image
@@ -56,7 +50,9 @@ export default function Home() {
         </header>
 
         <div className={styles.page}>
-          <p><Link href="articles">articles</Link></p>
+          <p>to be filled out later. here are some links though:</p>
+          <br />
+          <p><Link href="issues">issues</Link> except they&apos;re &quot;releases&quot;, not &quot;bugs&quot;. no I can&apos;t find a better way to phrase this; help</p>
           <p><Link href="staff">about our staff</Link></p>
         </div>
       </div>
