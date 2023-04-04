@@ -52,7 +52,7 @@ export default function Home() {
         <div className={styles.page}>
           <p>to be filled out later. here are some links though:</p>
           <br />
-          <p><Link href="issues">issues</Link> except they&apos;re &quot;releases&quot;, not &quot;bugs&quot;. no I can&apos;t find a better way to phrase this; help</p>
+          <p><Link href="issues">issues</Link></p>
           <p><Link href="staff">about our staff</Link></p>
         </div>
       </div>
