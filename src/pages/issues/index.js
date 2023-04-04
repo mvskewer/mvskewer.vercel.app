@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/issues/Home.module.css'
 import Link from 'next/link'
 import Particles from '@/components/Particles'
+import Gtag from '@/components/Gtag'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <title>Issues | The Skewer</title>
       </Head>
 
+      <Gtag />
       <Particles />
 
       <main className={styles.body}>

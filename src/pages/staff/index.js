@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Particles from '@/components/Particles'
 import Bio from '@/components/Bio'
 import styles from '@/styles/staff/Home.module.css'
+import Gtag from '@/components/Gtag'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <title>Staff | The Skewer</title>
       </Head>
 
+      <Gtag />
       <Particles />
 
       <div className={styles.main}>

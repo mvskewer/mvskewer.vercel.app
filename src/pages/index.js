@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import Particles from '@/components/Particles'
+import Gtag from '@/components/Gtag'
 
 
 export default function Home() {
@@ -18,9 +19,8 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
         <title>Home | The Skewer</title>
       </Head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-0X6T2X9WNM"></Script>
-      <Script src="/gtag.js"></Script>
-
+      
+      <Gtag />
       <Particles />
 
       <div className={styles.darkmode}>

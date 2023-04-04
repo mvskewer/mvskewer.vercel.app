@@ -2,6 +2,7 @@ import Head from 'next/head'
 import File from '@/components/File'
 import Particles from '@/components/Particles'
 import styles from '@/styles/issues/archive/Home.module.css'
+import Gtag from '@/components/Gtag'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <meta />
       </Head>
 
+      <Gtag />
       <Particles />
 
       <main className={styles.main}>
