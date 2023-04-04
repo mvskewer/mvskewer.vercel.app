@@ -46,9 +46,9 @@ export default function Home() {
             <p>A poet, a journalist,</p>
             <p>and sometimes funny.&quot;</p>
             <br />
-            <p>It&apos;s our honor to have Fullpetal Alchemist, an esteemed poet and journalist, on our staff. They&apos;re known best for poetry published on their extremely popular Wattpad profile, <Link href="https://www.wattpad.com/user/BlessedBlossomBoi">BlessedBlossomBoi</Link>, and for their deep, insightful analysis of high school issues. They also take a passing interest in chess, school-scale news, and arguing about frivolous things in the debate section.</p>
+            <p>It&apos;s our honor to have Fullpetal Alchemist, an esteemed poet and journalist, on our staff. They&apos;re known best for poetry published on their extremely popular Wattpad profile, <Link href="https://www.wattpad.com/user/BlessedBlossomBoi" target="_blank">BlessedBlossomBoi</Link>, and for their deep, insightful analysis of high school issues. They also take a passing interest in chess, school-scale news, and arguing about frivolous things in the debate section.</p>
             <br />
-            <p>You may challenge them to a game of chess here: <Link href="https://lichess.org/@/Stupidity">lichess.org/@/Stupdity</Link></p>
+            <p>You may challenge them to a game of chess here: <Link href="https://lichess.org/@/Stupidity" target="_blank">lichess.org/@/Stupdity</Link></p>
           </Bio>
           <Bio name="J. Balvin" img="j-balvin">
             17, student, saxophone player, magic the gathering officianado, one piece addict.
