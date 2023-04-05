@@ -15,7 +15,7 @@ export default function Home() {
       <Particles />
 
       <main className={styles.main}>
-        <p>hi</p>
+        <p>by month:</p>
         <ul>
           <File path="2023/February.pdf" name="February">february</File>
           <File path="2023/March.pdf" name="March">march</File>
