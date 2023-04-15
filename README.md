@@ -25,7 +25,7 @@ yarn start
 
 <br>
 
-a few other buttons for other platforms if you wish:
+some buttons for remote deployments if you wish:
 <br>
 <br>
 
