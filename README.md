@@ -14,6 +14,15 @@
 - run `yarn build`
 - run `yarn start`
 
+### or, run this command:
+```bash
+cp .env.example .env.local \
+vim .env.local \
+yarn \
+yarn build \
+yarn start
+```
+
 <br>
 
 a few other buttons for other platforms if you wish:
@@ -40,6 +49,6 @@ a few other buttons for other platforms if you wish:
 <br>
 
 ## TODO:
-- make particles work with `<Link>` tags
 - consistent css :)
+  - page class or something
 - come up with more things to do
