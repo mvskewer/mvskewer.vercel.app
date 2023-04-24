@@ -1,3 +1,5 @@
+// .js until I figure out how to configure topLevelAwait in TS...
+
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
