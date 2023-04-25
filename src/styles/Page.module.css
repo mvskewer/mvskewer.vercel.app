@@ -5,7 +5,7 @@
 	/* background: var(--background-color) */
 	color: white;
 	font-family: 'Fira Code';
-	overflow-y: hidden;
+	overflow-y: auto;
 	height: 80vh
   }
 
