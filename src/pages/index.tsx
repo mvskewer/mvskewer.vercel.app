@@ -3,8 +3,6 @@ import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
-import Particles from '@/components/Particles'
-import Gtag from '@/components/Gtag'
 
 
 export default function Home() {
@@ -15,10 +13,6 @@ export default function Home() {
       h1="The Skewer"
       h2="The official website of The Skewer!"
     >
-
-      <Gtag />
-      <Particles />
-
       {/* darkmode */}
       <div className={styles.darkmode}>
         <Image

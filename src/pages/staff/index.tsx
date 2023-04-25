@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import Particles from '@/components/Particles'
 import Bio from '@/components/Bio'
-import styles from '@/styles/staff/Home.module.css'
-import Gtag from '@/components/Gtag'
 import Page from '@/components/Page'
 
 export default function Home() {
@@ -13,9 +10,6 @@ export default function Home() {
       h1="Staff Page"
       h2="about our staff"
     >
-      <Gtag />
-      <Particles />
-
       <div>
         <Bio name="Yongle" img="yongle">
           <p>Used to be the Emperor of the Ming Dynasty and is now the head of The Skewer.</p>
