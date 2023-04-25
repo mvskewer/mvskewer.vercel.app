@@ -19,7 +19,7 @@ export default function Home() {
       <Gtag />
       <Particles />
 
-      darkmode
+      {/* darkmode */}
       <div className={styles.darkmode}>
         <Image
           src="./darkmode.svg"
