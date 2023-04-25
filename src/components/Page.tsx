@@ -1,8 +1,5 @@
 import styles from '@/styles/Page.module.css'
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import Script from 'next/script'
 import Gtag from '@/components/Gtag'
 import Particles from '@/components/Particles'
 
