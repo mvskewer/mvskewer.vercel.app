@@ -4,10 +4,10 @@
 	z-index: 0;
 	/* background: var(--background-color) */
 	color: white;
-	font-family: 'Fira Code';
+	font-family: "Fira Code";
 	overflow-y: auto;
-	height: 80vh
-  }
+	height: 80vh;
+}
 
 h1.title,
 h2.title {
@@ -15,7 +15,7 @@ h2.title {
 	padding: 10px;
 }
 
-  .page {
+.page {
 	margin: 10px;
 	line-height: 150%;
-  }
+}
