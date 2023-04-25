@@ -33,7 +33,7 @@ export default function Home() {
         <Script src="./darkmode.js"></Script>
       </div>
 
-      <p>to be filled out later. here are some links though:</p>
+      <p>Welcome to our website! Here are some links to get you started:</p>
       <br />
       <p><Link href="issues">issues</Link></p>
       <p><Link href="staff">about our staff</Link></p>
