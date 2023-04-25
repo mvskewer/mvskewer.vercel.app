@@ -19,6 +19,7 @@ export default function Home() {
       <Gtag />
       <Particles />
 
+      darkmode
       <div className={styles.darkmode}>
         <Image
           src="./darkmode.svg"
@@ -37,10 +38,11 @@ export default function Home() {
         </div>
         <Script src="./darkmode.js"></Script>
       </div>
-          <p>to be filled out later. here are some links though:</p>
-          <br />
-          <p><Link href="issues">issues</Link></p>
-          <p><Link href="staff">about our staff</Link></p>
+
+      <p>to be filled out later. here are some links though:</p>
+      <br />
+      <p><Link href="issues">issues</Link></p>
+      <p><Link href="staff">about our staff</Link></p>
     </Page>
   )
 }
