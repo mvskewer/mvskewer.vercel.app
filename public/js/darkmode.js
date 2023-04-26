@@ -23,7 +23,7 @@ setInterval(handlePageChange, 200);
 let loadingDotsInterval;
 
 async function insult() {
-	console.log(darkmode);
+	// console.log(darkmode);
 	if (darkmode) {
 		clearInterval(loadingDotsInterval);
 		const insult = await fetch("/api/darkmode").then(res => parseRes(res));
@@ -56,7 +56,7 @@ async function parseRes(res) {
 	else
 		return {
 			error: res.status,
-			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened!`,
+			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened! our OpenAI API key probably expired. oh well!`,
 		};
 }
 
