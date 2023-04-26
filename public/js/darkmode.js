@@ -56,7 +56,7 @@ async function parseRes(res) {
 	else
 		return {
 			error: res.status,
-			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened! our OpenAI API key probably expired. oh well!`,
+			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened! our OpenAI API key probably expired. oh well! I guess you're stuck in dark mode!`,
 		};
 }
 
