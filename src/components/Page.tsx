@@ -16,7 +16,7 @@ export default function Page(props: any) {
 				<meta name="description" content={props.description} />
 
 				<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-				<title>{props.title} | The Skewer</title>
+				<title>{`${props.title} | The Skewer`}</title>
 			</Head>
 
 			<Darkmode />
