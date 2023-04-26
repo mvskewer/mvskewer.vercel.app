@@ -1,0 +1,13 @@
+import Link from 'next/link'
+import Image from 'next/image'
+import styles from '@/styles/FooterIcon.module.css'
+
+export default function FooterIcon(props: any) {
+	return (
+		<div className={styles.footerIcon} title={props.title}>
+			<Link href={props.href} target="_blank">
+				<Image src={props.imageSrc} alt={props.alt} width="32" height="32" />
+			</Link>
+		</div>
+	);
+}
