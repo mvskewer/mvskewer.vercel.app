@@ -1,5 +1,5 @@
 let darkmode = false;
-let svg = document.querySelector("#darkmode-svg");
+let darkmodeButton = document.querySelector("#darkmode-svg");
 let msg = document.querySelector("#darkmode-msg");
 let blurry = document.querySelector("#blur");
 let locationCache = location.href;
@@ -10,15 +10,13 @@ let hiddenClass;
 	hiddenClass = await fetch('/api/darkmodeHiddenClass').then(res=>res.json()).then(json=>json.selector);
 })()
 
-async function handleClick() {
+async function handleDarkmodeClick() {
 	darkmode = !darkmode;
 	handleBlur();
 	await insult();
 }
 
-svg.addEventListener("click", handleClick);
-
-setInterval(handlePageChange, 200);
+darkmodeButton.addEventListener("click", handleDarkmodeClick);
 
 let loadingDotsInterval;
 
@@ -58,16 +56,4 @@ async function parseRes(res) {
 			error: res.status,
 			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened! our OpenAI API key probably expired. oh well! I guess you're stuck in dark mode!`,
 		};
-}
-
-function handlePageChange() {
-	if (location.href != locationCache) {
-		locationCache = location.href;
-		svg.removeEventListener("click", handleClick);
-		svg = document.querySelector("#darkmode-svg");
-		msg = document.querySelector("#darkmode-msg");
-		blurry = document.querySelector("#blur");
-
-		svg.addEventListener("click", handleClick);
-	}
 }

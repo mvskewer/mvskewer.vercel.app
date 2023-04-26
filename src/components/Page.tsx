@@ -1,9 +1,10 @@
 import styles from "@/styles/Page.module.css";
 import Head from "next/head";
+import Script from 'next/script'
 import Gtag from "@/components/Gtag";
 import Particles from "@/components/Particles";
 import Footer from "@/components/Footer";
-import SkewerNavigationBar from "@/components/SkewerNavigationBar";
+import NavBar from "@/components/NavBar";
 import Darkmode from "@/components/Darkmode";
 
 export default function Page(props: any) {
@@ -22,10 +23,11 @@ export default function Page(props: any) {
 			<Darkmode />
 			<Gtag />
 			<Particles />
+			<Script src="/js/handlePageChange.js" />
 
 			<div className={styles.main}>
 				<nav>
-					<SkewerNavigationBar />
+					<NavBar />
 				</nav>
 
 				<header>
