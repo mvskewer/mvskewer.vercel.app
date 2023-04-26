@@ -16,6 +16,18 @@ export default function Footer() {
 				title="sign up for our newsletter here!"
 				alt="mail icon"
 			/>
+			<FooterIcon
+				href="https://twitter.com/mvskewer"
+				imageSrc="/birdsite.svg"
+				title="we're on the bird site for some reason"
+				alt="the closest icon I could find on octicons for 'twitter'"
+			/>
+			<FooterIcon
+				href="https://mas.to/@mvskewer"
+				imageSrc="/mastodon.svg"
+				title="our actual social media account"
+				alt="mastodon icon (also not from octicons, if you care)"
+			/>
 		</div>
 	);
 }
