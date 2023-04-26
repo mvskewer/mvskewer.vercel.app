@@ -6,7 +6,7 @@ const Particles = () => {
     <>
       <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
       <div className={styles["particles-js"]} id="particles-js"></div>
-      <Script src="/particles.js"></Script>
+      <Script src="/js/particles.js"></Script>
     </>
   );
 }

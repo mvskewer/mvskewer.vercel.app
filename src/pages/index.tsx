@@ -16,7 +16,7 @@ export default function Home() {
       {/* darkmode */}
       <div className={styles.darkmode}>
         <Image
-          src="./darkmode.svg"
+          src="/icons/darkmode.svg"
           className={styles.darkmode}
           alt="dark mode toggle"
           width="50"
@@ -30,7 +30,7 @@ export default function Home() {
         >
           <p>loading light mode css...</p>
         </div>
-        <Script src="./darkmode.js"></Script>
+        <Script src="/js/darkmode.js"></Script>
       </div>
 
       <p>Welcome to our website! Here are some links to get you started:</p>

@@ -6,7 +6,7 @@ export default function FooterIcon(props: any) {
 	return (
 		<div className={styles.footerIcon} title={props.title}>
 			<Link href={props.href} target="_blank">
-				<Image src={props.imageSrc} alt={props.alt} width="32" height="32" />
+				<Image src={`/icons/${props.imageSrc}`} alt={props.alt} width="32" height="32" />
 			</Link>
 		</div>
 	);
