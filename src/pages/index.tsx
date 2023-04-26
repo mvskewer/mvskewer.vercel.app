@@ -23,9 +23,9 @@ export default function Home() {
           height="50"
           id="darkmode-svg"
         ></Image>
-        <div className={[styles.blur, styles.center, styles.hidden].join(" ")} id="blur"></div>
+        <div className={`${styles.blur} ${styles.center} ${styles.hidden}`} id="blur"></div>
         <div
-          className={[styles.darkmode, styles.hidden, styles["darkmode-msg"], styles.center].join(" ")}
+          className={`${styles.darkmode} ${styles.hidden} ${styles["darkmode-msg"]} ${styles.center}`}
           id="darkmode-msg"
         >
           <p>loading light mode css...</p>

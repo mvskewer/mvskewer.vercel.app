@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const File = (props: any) => {
   return (
-    <li className={[styles.file, styles.pdf].join(" ")}>
+    <li className={`${styles.file} ${styles.pdf}`}>
       <Link
         href={`/issues/archive/${props.path}`}
         title={props.name}
