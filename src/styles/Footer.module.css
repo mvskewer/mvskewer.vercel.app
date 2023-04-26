@@ -11,3 +11,8 @@
 .footer > div > a {
 	border: none;
 }
+
+.footer > div > a:hover, .footer > div > a:not(:hover) {
+	transition: none;
+	font-size: 0;
+}
