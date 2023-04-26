@@ -3,6 +3,7 @@ let svg = document.querySelector("#darkmode-svg");
 let msg = document.querySelector("#darkmode-msg");
 let blurry = document.querySelector("#blur");
 let locationCache = location.href;
+let hiddenClass;
 
 async function handleClick() {
 	darkmode = !darkmode;
@@ -17,7 +18,7 @@ setInterval(handlePageChange, 250);
 let loadingDotsInterval;
 
 async function insult() {
-	const hiddenClass = await fetch('/api/darkmodeHiddenClass').then(res=>res.json()).then(json=>json.selector);
+	hiddenClass = await fetch('/api/darkmodeHiddenClass').then(res=>res.json()).then(json=>json.selector);
 	console.log(darkmode);
 	if (darkmode) {
 		clearInterval(loadingDotsInterval);
