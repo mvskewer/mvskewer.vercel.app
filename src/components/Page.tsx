@@ -4,6 +4,7 @@ import Gtag from "@/components/Gtag";
 import Particles from "@/components/Particles";
 import Footer from "@/components/Footer";
 import SkewerNavigationBar from "@/components/SkewerNavigationBar";
+import Darkmode from "@/components/Darkmode";
 
 export default function Page(props: any) {
 	return (
@@ -18,6 +19,7 @@ export default function Page(props: any) {
 				<title>{props.title} | The Skewer</title>
 			</Head>
 
+			<Darkmode />
 			<Gtag />
 			<Particles />
 
