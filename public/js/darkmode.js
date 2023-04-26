@@ -3,7 +3,12 @@ let svg = document.querySelector("#darkmode-svg");
 let msg = document.querySelector("#darkmode-msg");
 let blurry = document.querySelector("#blur");
 let locationCache = location.href;
+
+// "top level await"
 let hiddenClass;
+(async ()=>{
+	hiddenClass = await fetch('/api/darkmodeHiddenClass').then(res=>res.json()).then(json=>json.selector);
+})()
 
 async function handleClick() {
 	darkmode = !darkmode;
@@ -13,12 +18,11 @@ async function handleClick() {
 
 svg.addEventListener("click", handleClick);
 
-setInterval(handlePageChange, 250);
+setInterval(handlePageChange, 200);
 
 let loadingDotsInterval;
 
 async function insult() {
-	hiddenClass = await fetch('/api/darkmodeHiddenClass').then(res=>res.json()).then(json=>json.selector);
 	console.log(darkmode);
 	if (darkmode) {
 		clearInterval(loadingDotsInterval);
@@ -33,7 +37,7 @@ async function insult() {
 		loadingDotsInterval = setInterval(() => {
 			msg.querySelector("p").innerText = `loading light mode css${".".repeat(i)}`;
 			if (++i > 3) i = 0; // hehe
-		}, 200);
+		}, 10);
 	}
 }
 
