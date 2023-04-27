@@ -7,6 +7,7 @@ const File = (props: any) => {
       <Link
         href={`/issues/archive/${props.path}`}
         title={props.name}
+        target="_blank"
       >
         {props.children}
       </Link>
