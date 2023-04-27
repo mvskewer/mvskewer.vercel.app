@@ -16,10 +16,10 @@
 
 ### or, run this command:
 ```bash
-cp .env.example .env.local \
-vim .env.local \
-yarn \
-yarn build \
+cp .env.example .env.local && \
+vim .env.local && \
+yarn && \
+yarn build && \
 yarn start
 ```
 
