@@ -14,6 +14,8 @@
 - run `yarn build`
 - run `yarn start`
 
+replace above package managers with your preferred package manager (`npm`, `pnpm`, etc)
+
 ### or, run this command:
 ```bash
 cp .env.example .env.local && \
