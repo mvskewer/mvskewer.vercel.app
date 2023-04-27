@@ -1,7 +1,6 @@
 import styles from '@/styles/Darkmode.module.css'
 import Image from 'next/image'
-import Script from 'next/script'
-import handleClick from './Darkmode/handleClick'
+import handleClick from '@/functions/Darkmode/handleClick'
 
 export default function Darkmode() {
 	return (
