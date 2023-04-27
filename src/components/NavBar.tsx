@@ -6,6 +6,7 @@ export default function NavBar() {
 	function handleClick() {
 		history.back();
 	}
+	
 	return (
 		<div onClick={handleClick}>
 			<Image
@@ -16,7 +17,6 @@ export default function NavBar() {
 				height="50"
 				id="backbutton-svg"
 			></Image>
-			<Script src="/js/backbutton.js"></Script>
 		</div>
 	);
 }
