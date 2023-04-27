@@ -16,7 +16,7 @@ export default function Darkmode() {
 			></Image>
 			<div className={`${styles.blur} ${styles.center} ${styles.hidden}`} id="blur"></div>
 			<div className={`${styles.darkmode} ${styles.hidden} ${styles["darkmode-msg"]} ${styles.center}`} id="darkmode-msg">
-				<p>YW1vbmcgdXMgdnIgZGlkbid0IHdpbiBiZXN0IHZyIGdhbWUgYXQgdGhlIGdhbWUgYXdhcmRzPyB3aGF0PyE=</p>
+				<p>aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==</p>
 			</div>
 		</div>
 	);

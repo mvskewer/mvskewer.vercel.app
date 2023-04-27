@@ -17,7 +17,7 @@ export default async function handleClick() {
 	} else {
 		msg.classList.add(styles.hidden);
 		blurry.classList.add(styles.hidden);
-		msg.querySelector('p').innerText = 'YW1vbmcgdXMgdnIgZGlkbid0IHdpbiBiZXN0IHZyIGdhbWUgYXQgdGhlIGdhbWUgYXdhcmRzPyB3aGF0PyE=';
+		msg.querySelector('p').innerText = 'aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==';
 	}
 
 	function initLoadingDots() {
