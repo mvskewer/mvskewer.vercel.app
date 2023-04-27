@@ -3,6 +3,7 @@ import styles from '@/styles/NavBar.module.css'
 
 export default function NavBar() {
 	function handleClick() {
+		if (location.pathname === '/') alert('wait what');
 		history.back();
 	}
 	
