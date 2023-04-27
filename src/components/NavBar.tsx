@@ -3,8 +3,11 @@ import Image from 'next/image'
 import styles from '@/styles/NavBar.module.css'
 
 export default function NavBar() {
+	function handleClick() {
+		history.back();
+	}
 	return (
-		<div className={styles.navbar}>
+		<div onClick={handleClick}>
 			<Image
 				src="/icons/backbutton.svg"
 				className={styles.navbar}
