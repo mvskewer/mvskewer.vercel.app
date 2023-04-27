@@ -12,7 +12,7 @@ export default function Home() {
     >
       <div>
         <Bio name="Yongle" img="yongle">
-          <p>Used to be the Emperor of the Ming Dynasty and is now the head of The Skewer.</p>
+          <p>Former Emperor of the Ming Dynasty and now the head of The Skewer. He never got tired of being in charge, apparently.</p>
         </Bio>
         <Bio name="Torbjörn Roger Halsten Herman Adolfsson" img="torbjörn-roger-halsten-herman-adolfsson">
           <p>Co-Founder of the Skewer and Executive Editor. Spends more time working on the webstite than actually working on his articles.</p>
