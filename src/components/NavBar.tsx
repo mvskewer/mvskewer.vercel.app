@@ -4,10 +4,10 @@ import styles from '@/styles/NavBar.module.css'
 
 export default function NavBar() {
 	return (
-		<div className={styles.darkmode}>
+		<div className={styles.navbar}>
 			<Image
 				src="/icons/backbutton.svg"
-				className={styles.darkmode}
+				className={styles.navbar}
 				alt="back button"
 				width="50"
 				height="50"
