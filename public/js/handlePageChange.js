@@ -2,8 +2,8 @@ function handlePageChange() {
 	if (location.href != locationCache) {
 		locationCache = location.href;
 
-		darkmodeButton.removeEventListener("click", handleDarkmodeClick);
-		backbutton.removeEventListener("click", handleBackbuttonClick);
+		// darkmodeButton.removeEventListener("click", handleDarkmodeClick);
+		// backbutton.removeEventListener("click", handleBackbuttonClick);
 
 		backbutton = document.querySelector("#backbutton-svg");
 		darkmodeButton = document.querySelector("#darkmode-svg");
