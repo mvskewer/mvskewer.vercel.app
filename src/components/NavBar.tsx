@@ -1,4 +1,3 @@
-import Script from 'next/script'
 import Image from 'next/image'
 import styles from '@/styles/NavBar.module.css'
 
