@@ -32,7 +32,7 @@ export default async function handleClick() {
 		if (res.status === 200) return res.json();
 		else return {
 			error: res.status,
-			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened! our OpenAI API key probably expired. oh well! I guess you're stuck in dark mode!`
+			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened!<br><br>check back in a few minutes if you <i>still</i> need light mode that badly.<br>if this issue persists, please file an issue <a href="https://github.com/moundsviewskewer/mvskewer.vercel.app/issues/new" target="_blank" style="color:black!important;">here</a>`
 		}
 	}
 
