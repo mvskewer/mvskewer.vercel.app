@@ -1,10 +1,4 @@
 function handlePageChange() {
-	// big clunky regex time woo
-	if (/(?:https?\:\/\/)?[\w\.-]+(?:\:\d{1,5})?\/$/.test(location.href)) {
-		backbutton.style = "display:none;";
-	} else {
-		backbutton.style = "display:block;";
-	}
 	if (location.href != locationCache) {
 		locationCache = location.href;
 
