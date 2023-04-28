@@ -7,10 +7,10 @@ type Data = {
 }
 
 const funnyStatusCodes = [
-	502,
+	501,
 	405,
 	402,
-]
+];
 
 export default function handler(
 	_req: NextApiRequest,
