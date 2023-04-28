@@ -18,5 +18,6 @@ export default function handler(
 	_req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
+	res.setHeader('Cache-Control', 'no-store');
 	res.status(funnyStatusCode).json({ output: 'John Doe', error: funnyStatusCode })
 }
