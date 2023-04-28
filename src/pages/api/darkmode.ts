@@ -12,9 +12,11 @@ const funnyStatusCodes = [
 	402,
 ];
 
+const funnyStatusCode = funnyStatusCodes[Math.floor(Math.random() * funnyStatusCodes.length)];
+
 export default function handler(
 	_req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
-	res.status(501).json({ output: 'John Doe', error: funnyStatusCodes[Math.floor(Math.random() * funnyStatusCodes.length)] })
+	res.status(funnyStatusCode).json({ output: 'John Doe', error: funnyStatusCode })
 }
