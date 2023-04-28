@@ -6,9 +6,15 @@ type Data = {
   error?: number
 }
 
+const funnyStatusCodes = [
+	502,
+	405,
+	402,
+]
+
 export default function handler(
 	_req: NextApiRequest,
 	res: NextApiResponse<Data>
 ) {
-	res.status(501).json({ output: 'John Doe', error: 501 })
+	res.status(501).json({ output: 'John Doe', error: funnyStatusCodes[Math.floor(Math.random() * funnyStatusCodes.length)] })
 }
