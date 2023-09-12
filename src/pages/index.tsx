@@ -13,8 +13,16 @@ export default function Home() {
       h1="The Skewer"
       h2="The official website of The Skewer!"
     >
-      <p>Welcome to our website! Here are some links to get you started:</p>
+      <h1 style={{"paddingBottom": "5px"}}>NEW! APPLY TO JOIN OUR TEAM:</h1>
+      <Link href="https://forms.gle/gceeiTsDnJQ4hctu5" style={{"fontSize": "24px"}}>https://forms.gle/gceeiTsDnJQ4hctu5</Link>
+      
       <br />
+      <br />
+
+      <p>Welcome to our website! Here are some links to get you started:</p>
+
+      <br />
+
       <p><Link href="issues">issues</Link></p>
       <p><Link href="staff">about our staff</Link></p>
     </Page>
