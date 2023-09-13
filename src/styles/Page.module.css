@@ -16,6 +16,7 @@ h2.title {
 }
 
 .page {
+	padding: 30px;
 	margin: 10px;
 	line-height: 1.5rem;
 }
