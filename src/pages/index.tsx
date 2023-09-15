@@ -14,7 +14,7 @@ export default function Home() {
       h2="The official website of The Skewer!"
     >
       <h1 style={{"paddingBottom": "5px"}}>NEW! APPLY TO JOIN OUR TEAM:</h1>
-      <Link href="https://forms.gle/gceeiTsDnJQ4hctu5" style={{"fontSize": "24px"}}>https://forms.gle/gceeiTsDnJQ4hctu5</Link>
+      <Link href="apply" style={{"fontSize": "24px"}}>https://forms.gle/gceeiTsDnJQ4hctu5</Link>
       
       <br />
       <br />
