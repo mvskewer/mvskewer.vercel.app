@@ -22,7 +22,7 @@ export default function Home() {
       <p>Welcome to our website! Here are some links to get you started:</p>
 
       <br />
-
+      <p><Link href="apply">join our team</Link></p>
       <p><Link href="issues">issues</Link></p>
       <p><Link href="staff">about our staff</Link></p>
     </Page>
