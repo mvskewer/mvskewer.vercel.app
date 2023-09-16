@@ -9,7 +9,7 @@ export default function Home() {
 			<ol start={0}>
 				<li>Fill out the <Link href="https://forms.gle/2A7cjpCUePy3hByu5">Google Form</Link></li>
 				<li>If we think you&apos;re the stuff, we&apos;ll invite you to a private Google Chat to conduct an interview
-					<li><h6>note that you can request to do the interview on call or in-person if you really want to</h6></li>
+					<ul><li><h6>note that you can request to do the interview on call or in-person if you really want to</h6></li></ul>
 				</li>
 			</ol>
 		</Page>
