@@ -10,19 +10,19 @@
 - optional (for now?): 
   - copy `.env.example` to `.env.local`
   - fill in with your openai api key
-- run `yarn install`
-- run `yarn build`
-- run `yarn start`
+- run `npm install`
+- run `npm build`
+- run `npm start`
 
-replace above package managers with your preferred package manager (`npm`, `pnpm`, etc)
+replace above package managers with your preferred package manager (`yarn`, `pnpm`, `bun`, etc)
 
 ### or, run this command:
 ```bash
 cp .env.example .env.local && \
 vim .env.local && \
-yarn && \
-yarn build && \
-yarn start
+npm i && \
+npm build && \
+npm start
 ```
 
 <br>
@@ -45,12 +45,3 @@ some buttons for remote deployments if you wish:
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/moundsviewskewer/mvskewer.vercel.app&branch=main&name=deploy-buttons)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/moundsviewskewer/mvskewer.vercel.app)
 [![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/moundsviewskewer/mvskewer.vercel.app)
-
-<br>
-<hr>
-<br>
-
-## TODO:
-- consistent css :)
-  - page class or something
-- come up with more things to do
