@@ -9,7 +9,10 @@ async function wait(ms: number) {
 }
 
 export default async function handleClick() {
-	let loadingDotsInterval: number | NodeJS.Timer;
+	let loadingDotsInterval: number | NodeJS.Timer; // I very much wish I could have this only run and compile on the frontend but 
+	// like
+	// how do I use the window object?
+	// I can't even do a ?. it's really weird
 	darkmode = !darkmode;
 	let msg: any = document.querySelector('#darkmode-msg');
 	let blurry: any = document.querySelector('#blur');
