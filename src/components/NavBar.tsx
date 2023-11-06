@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '@/styles/NavBar.module.css'
+import Link from 'next/link';
 
 export default function NavBar() {
 	function handleClick() {
@@ -8,6 +9,7 @@ export default function NavBar() {
 	}
 	
 	return (
+		<Link href="..">
 		<div onClick={handleClick}>
 			<Image
 				src="/icons/backbutton.svg"
@@ -18,5 +20,6 @@ export default function NavBar() {
 				id="backbutton-svg"
 			></Image>
 		</div>
+	</Link>
 	);
 }
