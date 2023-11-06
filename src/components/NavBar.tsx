@@ -10,16 +10,16 @@ export default function NavBar() {
 	
 	return (
 		<Link href="..">
-		<div onClick={handleClick}>
-			<Image
-				src="/icons/backbutton.svg"
-				className={styles.navbar}
-				alt="back button"
-				width="50"
-				height="50"
-				id="backbutton-svg"
-			></Image>
-		</div>
-	</Link>
+			<div onClick={handleClick}>
+				<Image
+					src="/icons/backbutton.svg"
+					className={styles.navbar}
+					alt="back button"
+					width="50"
+					height="50"
+					id="backbutton-svg"
+				></Image>
+			</div>
+		</Link>
 	);
 }
