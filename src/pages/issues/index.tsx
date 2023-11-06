@@ -21,7 +21,7 @@ export default function Home() {
 			<p>You can view all of our previous issues <Link href="/issues/archive">here</Link>.</p>
 			<br />
 			<p>Read our latest issue:</p>
-			{latestIssue && <File path={latestIssue.path} />}
+			{latestIssue ? <File path={latestIssue.path} /> : <p>could not fetch latest issue.</p>}
 		</Page>
 	);
 }
