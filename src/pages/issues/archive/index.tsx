@@ -14,6 +14,7 @@ export default function Home() {
           <FileLink path="2023/February.pdf" name="February">February</FileLink>
           <FileLink path="2023/March.pdf" name="March">March</FileLink>
           <FileLink path="2023/September.pdf" name="September">September</FileLink>
+          <FileLink path="2023/November.pdf" name="November">November</FileLink>
         </ul>
     </Page>
   )
