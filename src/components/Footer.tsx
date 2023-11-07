@@ -17,16 +17,22 @@ export default function Footer() {
 				alt="mail icon"
 			/>
 			<FooterIcon
+				href="https://www.instagram.com/mvskewer/"
+				imageSrc="instagram.svg"
+				title="we're on instagram babyyy WOOOOOOO (insert moist critical pop off)"
+				alt="instagram icon"
+			/>
+			<FooterIcon
 				href="https://twitter.com/mvskewer"
 				imageSrc="birdsite.svg"
 				title="we're on the bird site for some reason"
-				alt="the closest icon I could find on octicons for 'twitter'"
+				alt="twitter icon"
 			/>
 			<FooterIcon
 				href="https://mas.to/@mvskewer"
 				imageSrc="mastodon.svg"
 				title="our actual social media account"
-				alt="mastodon icon (also not from octicons, if you care)"
+				alt="mastodon icon"
 			/>
 		</div>
 	);
