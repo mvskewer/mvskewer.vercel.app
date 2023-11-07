@@ -3,8 +3,12 @@ import Page from "@/components/Page";
 import Link from "next/link";
 import File from "@/components/File";
 
+type Issue = {
+	path: string;
+};
+
 export default function Home() {
-	const [latestIssue, setLatestIssue] = useState(null);
+	const [latestIssue, setLatestIssue] = useState<Issue | null>(null);
 
 	useEffect(() => {
 		const fetchLatestIssue = async () => {
