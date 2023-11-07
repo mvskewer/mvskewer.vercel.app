@@ -124,3 +124,7 @@ a:hover {
     color-scheme: dark;
   }
 }
+
+.footerPadding {
+  margin-bottom: 40vh;
+}

@@ -22,6 +22,7 @@ export default function Home() {
 			<br />
 			<p>Read our latest issue:</p>
 			{latestIssue ? <File path={latestIssue.path} /> : <p>could not fetch latest issue.</p>}
+			<div className="footerPadding"></div>
 		</Page>
 	);
 }

@@ -1,5 +1,15 @@
+.container {
+	display: flex;
+	resize: both;
+	overflow: hidden;
+}
+
 .file {
+	border: 1px solid #fff;
+
 	margin-top: 2rem;
-	height: 80vh;
-	width: 42vw;
+	/* height: 80vh;
+	width: 42vw; */
+
+	flex-grow: 1;
 }

@@ -2,7 +2,9 @@ import styles from "@/styles/File.module.css"
 
 const File = (props: {path: string}) => {
 	return (
-		<iframe src={props.path} className={styles.file} />
+		<div className={styles.container}>
+			<iframe src={props.path} className={styles.file} />
+		</div>
 	)
 }
 
