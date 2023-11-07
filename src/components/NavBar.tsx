@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export default function NavBar() {
 	function handleClick() {
-		if (location.pathname === '/') alert('wait what');
-		history.back();
+		if (location.pathname === '/') alert('no?');
+		// setTimeout(history.back, 1000);
 	}
 	
 	return (
-		<Link href="..">
-			<div onClick={handleClick}>
+		<div onClick={handleClick}>
+			<Link href="../">
 				<Image
 					src="/icons/backbutton.svg"
 					className={styles.navbar}
@@ -19,7 +19,7 @@ export default function NavBar() {
 					height="50"
 					id="backbutton-svg"
 				></Image>
-			</div>
-		</Link>
+			</Link>
+		</div>
 	);
 }
