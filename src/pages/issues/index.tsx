@@ -25,6 +25,7 @@ export default function Home() {
 			<p>You can view all of our previous issues <Link href="/issues/archive">here</Link>.</p>
 			<br />
 			<p>Read our latest issue:</p>
+			<p><Link href="/issues/archive/2023/November.pdf" target='_blank'>Open in a new tab</Link>, or read it down below</p>
 			{latestIssue ? <File path={latestIssue.path} /> : <p>could not fetch latest issue.</p>}
 			<div className="footerPadding"></div>
 		</Page>
