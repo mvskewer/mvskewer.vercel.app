@@ -3,29 +3,39 @@ import { redirect } from "next/navigation";
 import members from "./members";
 import minimizeName from "@/functions/util/minimizeName";
 
+import Page from "@/components/Page";
+
 export default function Member() {
 	const router = useRouter();
 	const { member } = router.query;
 
-	if (member === undefined)
+	if (member === undefined) {
 		return (
-			<>
-				<p>404</p>
-				<p>
-					member <code>{JSON.stringify(member)}</code> not found.
-				</p>
-			</>
+			<Page>
+				<p>loading...</p>
+			</Page>
 		);
+	}
 
 	const memberSlugString = member.toString();
+	const selectedMember = members.find(e => minimizeName(e.name) === minimizeName(memberSlugString));
+
+	if (selectedMember === undefined)
+		return (
+			<Page>
+				<p>404</p>
+				<p>
+					member <code>{memberSlugString}</code> not found.
+				</p>
+			</Page>
+		);
 
 	// redirect to minified name
-	if (memberSlugString !== minimizeName(memberSlugString)) redirect(`/about/staff/${minimizeName(memberSlugString)}`);
+	// if (memberSlugString !== minimizeName(memberSlugString)) redirect(`/about/staff/${minimizeName(memberSlugString)}`);
 
-	const selectedMember = members.find(e => minimizeName(e.name) === minimizeName(memberSlugString));
 	return (
-		<div>
+		<Page>
 			<h1>{selectedMember?.name}</h1>
-		</div>
+		</Page>
 	);
 }
