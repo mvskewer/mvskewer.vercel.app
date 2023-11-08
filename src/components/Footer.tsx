@@ -19,19 +19,19 @@ export default function Footer() {
 			<FooterIcon
 				href="https://www.instagram.com/mvskewer/"
 				imageSrc="instagram.svg"
-				title="we're on instagram babyyy WOOOOOOO (insert moist critical pop off)"
+				title="our instagram account"
 				alt="instagram icon"
 			/>
 			<FooterIcon
-				href="https://twitter.com/mvskewer"
-				imageSrc="birdsite.svg"
-				title="we're on the bird site for some reason"
+				href="https://x.com/mvskewer"
+				imageSrc="x.svg"
+				title="our twitter account"
 				alt="twitter icon"
 			/>
 			<FooterIcon
 				href="https://mas.to/@mvskewer"
 				imageSrc="mastodon.svg"
-				title="our actual social media account"
+				title="our mastodon account"
 				alt="mastodon icon"
 			/>
 		</div>
