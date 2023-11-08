@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { redirect } from "next/navigation";
-import members from "./members";
+import members from "@/config/members";
 import minimizeName from "@/functions/util/minimizeName";
 
 import Page from "@/components/Page";
