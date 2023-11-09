@@ -33,7 +33,6 @@ export default function Page(props: {
 			<Darkmode />
 			<Gtag />
 			<Particles />
-			<Script src="/js/handlePageChange.js" />
 
 			<div className={styles.main}>
 				<nav>
