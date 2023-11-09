@@ -1,7 +1,7 @@
 import styles from '@/styles/issues/archive/File.module.css'
 import Link from 'next/link';
 
-const File = (props: any) => {
+const File = (props: {path: string; name: string; children: any}) => {
   return (
     <li className={`${styles.file} ${styles.pdf}`}>
       <Link
