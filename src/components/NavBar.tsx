@@ -13,8 +13,6 @@ export default function NavBar() {
 		if (currentUrl === '/') alert('no?');
 		// setTimeout(history.back, 1000);
 	}
-	
-	console.log(currentUrl);
 
 	return (
 		<div onClick={handleClick}>
