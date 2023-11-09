@@ -2,6 +2,8 @@ import Image from 'next/image'
 import styles from '@/styles/NavBar.module.css'
 import Link from 'next/link';
 
+import dotdot from "@/functions/util/dotdot";
+
 export default function NavBar() {
 	function handleClick() {
 		if (location.pathname === '/') alert('no?');
@@ -10,7 +12,7 @@ export default function NavBar() {
 	
 	return (
 		<div onClick={handleClick}>
-			<Link href="../">
+			<Link href={dotdot(location.pathname)}>
 				<Image
 					src="/icons/backbutton.svg"
 					className={styles.navbar}
