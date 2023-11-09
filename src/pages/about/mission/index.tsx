@@ -5,8 +5,10 @@ export default function Home() {
 		<Page
 			description="our mission"
 			title="Our Mission"
+			h1="Our Mission"
+			h2="Our Mission at The Skewer is um uh"
 		>
-			<p>our mission</p>
+			<p>- our mission</p>
 		</Page>
 	);
 }

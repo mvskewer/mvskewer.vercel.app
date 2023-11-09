@@ -17,7 +17,7 @@ export default function Home() {
       <br />
       <p><Link href="apply">Join Our Team</Link></p>
       <p><Link href="issues">Issues</Link></p>
-      <p><Link href="staff">About</Link></p>
+      <p><Link href="about">About</Link></p>
     </Page>
   )
 }
