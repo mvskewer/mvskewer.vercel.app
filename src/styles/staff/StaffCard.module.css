@@ -1,8 +1,9 @@
-div.cardContainer {
+div.card {
     width: 20em;
+	height: 22em;
     border: 1px solid;
     padding: 1em;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .img {

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Bio(props: { img: string; name: string; children: any }) {
 	return (
-		<div className={styles.cardContainer}>
+		<div className={styles.card}>
 			<Image src={`/staff/img/${props.img}.webp`} width="69" height="69" alt={`a picture of or for ${props.name}`} className={styles.img}></Image>
 			<p>
 				<b>{props.name}</b>

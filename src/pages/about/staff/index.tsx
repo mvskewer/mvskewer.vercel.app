@@ -2,6 +2,8 @@ import Link from 'next/link'
 import StaffCard from '@/components/StaffCard'
 import Page from '@/components/Page'
 
+import styles from "@/styles/staff/Staff.module.css";
+
 export default function Home() {
   return (
     <Page
@@ -10,7 +12,7 @@ export default function Home() {
       h1="Staff Page"
       h2="about our staff"
     >
-      <div>
+      <div className={styles.cardContainer}>
         <StaffCard name="Yongle" img="yongle">
           <p>Former Emperor of the Ming Dynasty and now the head of The Skewer. He never got tired of being in charge, apparently.</p>
         </StaffCard>
