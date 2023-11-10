@@ -31,10 +31,11 @@ export default function Member() {
 			<Page
 				description="This could be you!"
 				title="nobody"
+				h1="404"
+				h2={`member "${memberSlugString}" not found.`}
 			>
-				<p>404</p>
 				<p>
-					member <code>{memberSlugString}</code> not found.
+					we couldn&apos;t find a member named <code>{memberSlugString}</code>.
 				</p>
 				<p>
 					this could be you though! you should apply to <Link href="/apply">Join Our Team</Link>!
