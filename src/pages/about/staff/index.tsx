@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Bio from '@/components/Bio'
+import Bio from '@/components/StaffCard'
 import Page from '@/components/Page'
 
 export default function Home() {
