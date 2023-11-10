@@ -1,3 +1,11 @@
+div.cardContainer {
+    width: 20em;
+    border: 1px solid;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
 .img {
-    border-radius: 100%;
+    border-radius: 10%;
+    width: 100%;
 }
