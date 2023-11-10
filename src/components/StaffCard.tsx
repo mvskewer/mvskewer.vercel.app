@@ -1,4 +1,4 @@
-import styles from '@/styles/staff/Bio.module.css'
+import styles from '@/styles/staff/StaffCard.module.css'
 // import homeStyles from '@/styles/staff/Home.module.css'
 import Image from 'next/image'
 
