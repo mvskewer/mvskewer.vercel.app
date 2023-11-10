@@ -10,6 +10,7 @@ import Darkmode from "@/components/Darkmode";
 export default function Page(props: {
 	description: string;
 	title: string;
+	faviconPath?: string;
 	h1?: string;
 	h2?: string;
 	h3?: string;
@@ -26,7 +27,7 @@ export default function Page(props: {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<meta name="description" content={props.description} />
 
-				<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+				<link rel="icon" type="image/x-icon" href={props.faviconPath ? props.faviconPath : "/favicon.ico"} />
 				<title>{`${props.title} | The Skewer`}</title>
 			</Head>
 
