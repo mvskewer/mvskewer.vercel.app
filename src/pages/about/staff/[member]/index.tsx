@@ -44,7 +44,10 @@ export default function Member() {
 		);
 
 	// redirect to minified name
-	// if (memberSlugString !== minimizeName(memberSlugString)) redirect(`/about/staff/${minimizeName(memberSlugString)}`);
+	if (memberSlugString !== minimizeName(memberSlugString)) {
+		router.replace(`/about/staff/${minimizeName(memberSlugString)}`);
+		return null;
+	}
 
 	return (
 		<Page
