@@ -1,10 +1,10 @@
-import { useRouter } from "next/router";
-import { redirect } from "next/navigation";
-import members from "@/config/members";
-import minimizeName from "@/functions/util/minimizeName";
-import Link from "next/link"
+import { useRouter } from 'next/router';
+import { redirect } from 'next/navigation';
+import members from '@/config/members';
+import minimizeName from '@/functions/util/minimizeName';
+import Link from 'next/link';
 
-import Page from "@/components/Page";
+import Page from '@/components/Page';
 
 export default function Member() {
 	const router = useRouter();
@@ -12,12 +12,7 @@ export default function Member() {
 
 	if (member === undefined) {
 		return (
-			<Page
-				description="member data loading..."
-				title="loading..."
-				h1="‮"
-				h2="‮"
-			>
+			<Page description="member data loading..." title="loading..." h1="‮" h2="‮">
 				<p>‮</p>
 			</Page>
 		);
@@ -28,12 +23,7 @@ export default function Member() {
 
 	if (selectedMember === undefined)
 		return (
-			<Page
-				description="This could be you!"
-				title="nobody"
-				h1="404"
-				h2={`member "${memberSlugString}" not found.`}
-			>
+			<Page description="This could be you!" title="nobody" h1="404" h2={`member "${memberSlugString}" not found.`}>
 				<p>
 					we couldn&apos;t find a member named <code>{memberSlugString}</code>.
 				</p>
@@ -50,12 +40,7 @@ export default function Member() {
 	}
 
 	return (
-		<Page
-			description={`${selectedMember.name}'s page`}
-			title={selectedMember.name}
-			h1={selectedMember.name}
-			h2={selectedMember.shortBio}
-		>
+		<Page description={`${selectedMember.name}'s page`} title={selectedMember.name} h1={selectedMember.name} h2={selectedMember.shortBio}>
 			<p>{selectedMember.longBio}</p>
 		</Page>
 	);

@@ -1,6 +1,6 @@
-import styles from "@/styles/staff/StaffCard.module.css";
+import styles from '@/styles/staff/StaffCard.module.css';
 // import homeStyles from '@/styles/staff/Home.module.css'
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function StaffCard(props: { img: string; name: string; children: JSX.Element }) {
 	return (
