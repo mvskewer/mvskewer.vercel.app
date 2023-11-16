@@ -7,4 +7,11 @@ module.exports = {
 		config.experiments.topLevelAwait = true;
 		return config;
 	},
+	images: {
+		remotePatterns: [
+			{
+				hostname: 'http.cat',
+			},
+		],
+	},
 };

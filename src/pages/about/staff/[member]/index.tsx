@@ -3,9 +3,12 @@ import { redirect } from 'next/navigation';
 import members from '@/config/members';
 import minimizeName from '@/functions/util/minimizeName';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Page from '@/components/Page';
 import Obituary from '@/components/Obituary';
+import HTTPCat from '@/components/HTTPCat';
+import httpStatusCodes from '@/config/httpStatusCodes';
 
 export default function Member() {
 	const router = useRouter();
@@ -22,9 +25,12 @@ export default function Member() {
 	const memberSlugString = member.toString();
 	const selectedMember = members.find(e => minimizeName(e.name) === minimizeName(memberSlugString));
 
-	if (selectedMember === undefined)
+	if (selectedMember === undefined) {
+		const code = Math.floor(Math.random() * 20) === 4 ? 451 : 404;
+
 		return (
 			<Page description="This could be you!" title="nobody" h1="404" h2={`member "${memberSlugString}" not found.`}>
+				<HTTPCat code={code} width="500" height="400" />
 				<p>
 					we couldn&apos;t find a member named <code>{memberSlugString}</code>.
 				</p>
@@ -33,6 +39,7 @@ export default function Member() {
 				</p>
 			</Page>
 		);
+	}
 
 	// redirect to minified name
 	if (memberSlugString !== minimizeName(memberSlugString)) {

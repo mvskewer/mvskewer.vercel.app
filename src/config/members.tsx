@@ -36,8 +36,37 @@ const members: Member[] = [
 	{
 		name: 'Amio Koivunen',
 		positions: ['Writer'],
-		shortBio: 'Resident shitposter',
-		longBio: "Juanma's #1 fan",
+		shortBio: "Resident shitposter and Juanma's #1 fan",
+		longBio: `Have sex
+Except 
+Except I put my pants in yes
+Pooped my beze bears
+Put my turner tan
+Or put my sperm to span
+Have sex
+Accept
+Busting
+Nutting
+Fool me, can't you?
+Fuller falafel lover
+Putting down the tiny best shoe
+Full of a lava lover
+Finding dust you turn your head, sure
+Fool her for love and love her
+I fornicate your fuming cashew
+Except
+I pulled my yeltsin years
+Pooped my best-a pants
+Pulled my tiny tang
+Or pulled my spender stan
+Have sex
+Except 
+Except
+I put my ants in, yes
+Pooped my beze bear
+Put my turner tan
+Or put my sperm to span
+Have sex!!!!!!! -Milo Morbius dance scene`,
 		deceased: false,
 	},
 	{
