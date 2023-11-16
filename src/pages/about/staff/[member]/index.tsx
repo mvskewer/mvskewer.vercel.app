@@ -48,7 +48,7 @@ export default function Member() {
 	}
 
 	return (
-		<Page description={`${selectedMember.name}'s page`} title={selectedMember.name} h1={selectedMember.name} h2={selectedMember.shortBio} faviconPath={minimizeName(selectedMember.name) + ".webp"}>
+		<Page description={`${selectedMember.name}'s page`} title={selectedMember.name} h1={selectedMember.name} h2={selectedMember.shortBio} faviconPath={"/staff/img/" + minimizeName(selectedMember.name) + ".webp"}>
 			{selectedMember.deceased && (
 				<>
 					<Obituary name={minimizeName(selectedMember.name)} />
