@@ -15,7 +15,7 @@ export default function Home() {
       <p>Welcome to our website! Here are some links to get you started:</p>
       <br />
       <p><Link href="issues">Issues</Link></p>
-      <p><Link href="staff">About</Link></p>
+      <p><Link href="about">About</Link></p>
       <p><Link href="apply">Join Our Team</Link></p>
     </Page>
   )
