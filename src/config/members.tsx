@@ -36,7 +36,7 @@ const members: Member[] = [
 	{
 		name: 'Amio Koivunen',
 		positions: ['Writer'],
-		shortBio: 'Reviewer of many a thing',
+		shortBio: 'Resident shitposter',
 		longBio: "Juanma's #1 fan",
 		deceased: false,
 	},
