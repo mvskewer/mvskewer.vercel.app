@@ -2,4 +2,6 @@ div.cardContainer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: stretch;
 }
