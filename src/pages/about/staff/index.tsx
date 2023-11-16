@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import StaffCard from '@/components/StaffCard';
 import Page from '@/components/Page';
 
@@ -12,8 +11,8 @@ export default function Home() {
 		<Page description="staff info page idk ***fill this out later***" title="Staff" h1="Staff Page" h2="about our staff">
 			<div className={styles.cardContainer}>
 				{members.map(member => (
-					<StaffCard name={member.name} img={`${member.name}${member.deceased ? '-deceased' : ''}`} key="s">
-						<p>{member.shortBio}</p>
+					<StaffCard name={member.name} img={minimizeName(`${member.name}${member.deceased ? '-deceased' : ''}`)} key="s">
+						<p>{member.deceased ? 'is with us no longer. you may still view their latest bio, as well as their obituary.' : member.shortBio}</p>
 					</StaffCard>
 				))}
 			</div>
