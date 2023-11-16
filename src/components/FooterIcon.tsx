@@ -5,7 +5,7 @@ import styles from '@/styles/FooterIcon.module.css';
 export default function FooterIcon(props: { href: string; title: string; imageSrc: string; alt: string }) {
 	return (
 		<div className={styles.footerIcon} title={props.title}>
-			<Link href={props.href} target="_blank" rel="me">
+			<Link href={props.href} target="_blank" rel="me" className="no-grow">
 				<Image src={`/icons/${props.imageSrc}`} alt={props.alt} width="32" height="32" />
 			</Link>
 		</div>
