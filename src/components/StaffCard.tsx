@@ -8,7 +8,7 @@ export default function StaffCard(props: { img: string; name: string; children: 
 	return (
 		<Link href={`/about/staff/${minimizeName(props.name)}`} className="no-grow">
 			<div className={styles.card}>
-				<Image src={`/staff/img/${props.img}.webp`} width="69" height="69" alt={`a picture of or for ${props.name}`} className={styles.img}></Image>
+				<Image src={`/staff/img/${props.img}.webp`} width="420" height="420" alt={`a picture of or for ${props.name}`} className={styles.img}></Image>
 				<p>
 					<b>{props.name}</b>
 				</p>
