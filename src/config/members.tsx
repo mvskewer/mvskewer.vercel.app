@@ -10,15 +10,15 @@ type Member = {
 };
 
 const members: Member[] = [
-	{
-		name: 'John Doe',
-		positions: ['Writer'],
-		shortBio: 'Loerm ipsum dolor sit amet.',
-		longBio:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidunt, nunc elit ultricies diam, quis aliquam nunc elit ut elit. Sed euismod, diam quis aliquam tincidunt, nunc elit ultricies diam, quis aliquam nunc elit ut elit.',
-		deceased: false,
-		// image can be derived from name
-	},
+	// {
+	// 	name: 'John Doe',
+	// 	positions: ['Writer'],
+	// 	shortBio: 'Loerm ipsum dolor sit amet.',
+	// 	longBio:
+	// 		'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam quis aliquam tincidunt, nunc elit ultricies diam, quis aliquam nunc elit ut elit. Sed euismod, diam quis aliquam tincidunt, nunc elit ultricies diam, quis aliquam nunc elit ut elit.',
+	// 	deceased: false,
+	// 	// image can be derived from name
+	// },
 	{
 		name: 'Yongle',
 		positions: ['Head', 'Co-Founder', 'Visual Designer', 'Editor', 'Writer'],
