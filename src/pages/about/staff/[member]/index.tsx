@@ -5,6 +5,7 @@ import minimizeName from '@/functions/util/minimizeName';
 import Link from 'next/link';
 
 import Page from '@/components/Page';
+import Obituary from '@/components/Obituary';
 
 export default function Member() {
 	const router = useRouter();
@@ -41,6 +42,17 @@ export default function Member() {
 
 	return (
 		<Page description={`${selectedMember.name}'s page`} title={selectedMember.name} h1={selectedMember.name} h2={selectedMember.shortBio}>
+			{selectedMember.deceased && (
+				<>
+					<Obituary name={minimizeName(selectedMember.name)} />
+					<br />
+					<hr />
+					<br />
+					<strong>original bio:</strong>
+					<br />
+					<br />
+				</>
+			)}
 			<p>{selectedMember.longBio}</p>
 		</Page>
 	);
