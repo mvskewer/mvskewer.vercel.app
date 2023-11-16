@@ -128,13 +128,6 @@ Have sex!!!!!!! -Milo Morbius dance scene`,
 		deceased: false,
 	},
 	{
-		name: 'Squishy',
-		positions: ['Visual Designer'],
-		shortBio: 'weerd',
-		longBio: '"I like to code. I like to draw. I like to write stuff"',
-		deceased: false,
-	},
-	{
 		name: 'Fred the Møøse',
 		positions: ['Writer'],
 		shortBio: 'Horoscoper',
