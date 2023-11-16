@@ -1,23 +1,22 @@
-import styles from '@/styles/Darkmode.module.css'
+import styles from '@/styles/Darkmode.module.css';
 
 let darkmode = false;
 
 async function wait(ms: number) {
 	return new Promise((res, _rej) => {
 		setTimeout(res, ms);
-	})
+	});
 }
 
 export default async function handleClick() {
-	let loadingDotsInterval: number | NodeJS.Timer; // I very much wish I could have this only run and compile on the frontend but 
+	let loadingDotsInterval: number | NodeJS.Timer; // I very much wish I could have this only run and compile on the frontend but
 	// like
 	// how do I use the window object?
 	// I can't even do a ?. it's really weird
 	darkmode = !darkmode;
 	let msg: any = document.querySelector('#darkmode-msg');
 	let blurry: any = document.querySelector('#blur');
-	
-	
+
 	if (darkmode) {
 		msg?.classList.remove(styles.hidden);
 		blurry?.classList.remove(styles.hidden);
@@ -39,17 +38,18 @@ export default async function handleClick() {
 
 	async function parseRes(res: any) {
 		if (res.status === 200) return res.json();
-		else return {
-			error: res.status,
-			output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened!<br><br>check back in a few minutes if you <i>still</i> need light mode that badly.<br>if this issue persists, please file an issue <a href="https://github.com/moundsviewskewer/mvskewer.vercel.app/issues/new" target="_blank" style="color:black!important;">here</a>.`
-		}
+		else
+			return {
+				error: res.status,
+				output: `oh no! <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/${res.status}" style="color:black!important;">this</a> happened!<br><br>check back in a few minutes if you <i>still</i> need light mode that badly.<br>if this issue persists, please file an issue <a href="https://github.com/moundsviewskewer/mvskewer.vercel.app/issues/new" target="_blank" style="color:black!important;">here</a>.`,
+			};
 	}
 
 	async function insult() {
 		await wait(1000); // temporary until I get an api key hehe
 		const insult = await parseRes(await fetch('/api/darkmode')); // slightly less disgusting than chained .then()
 		clearInterval(loadingDotsInterval);
-		if (!("error" in insult)) {
+		if (!('error' in insult)) {
 			msg.querySelector('p').innerText = insult.output;
 		} else {
 			msg.querySelector('p').innerHTML = insult.output;

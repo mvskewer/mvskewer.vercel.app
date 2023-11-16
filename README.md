@@ -1,5 +1,7 @@
 # The Skewer
+
 ## The official website of The Skewer
+
 🔗 [mvskewer.vercel.app](https://mvskewer.vercel.app)
 
 <br>
@@ -7,16 +9,18 @@
 <br>
 
 ## to deploy:
-- optional (for now?): 
-  - copy `.env.example` to `.env.local`
-  - fill in with your openai api key
-- run `npm install`
-- run `npm build`
-- run `npm start`
+
+-   optional (for now?):
+    -   copy `.env.example` to `.env.local`
+    -   fill in with your openai api key
+-   run `npm install`
+-   run `npm build`
+-   run `npm start`
 
 replace above package managers with your preferred package manager (`yarn`, `pnpm`, `bun`, etc)
 
 ### or, run this command:
+
 ```bash
 cp .env.example .env.local && \
 vim .env.local && \

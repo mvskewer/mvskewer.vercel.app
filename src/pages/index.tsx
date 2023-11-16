@@ -1,9 +1,8 @@
-import Page from '@/components/Page'
-import Script from 'next/script'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
-
+import Page from '@/components/Page';
+import Script from 'next/script';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from '@/styles/Home.module.css';
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@
 	z-index: 0;
 	/* background: var(--background-color) */
 	color: white;
-	font-family: "Fira Code";
+	font-family: 'Fira Code';
 	overflow-y: auto;
 	height: 88vh;
 }
