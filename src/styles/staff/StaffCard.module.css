@@ -1,4 +1,4 @@
-.staff-card-link  {
+.staff-card-link {
 	border-bottom: 0;
 }
 
@@ -19,10 +19,10 @@ div.card {
 	left: 0;
 	z-index: -1;
 	filter: brightness(50%) blur(5px);
-	transition: .3s;
+	transition: 0.3s;
 }
 
 div.card:hover .img {
 	filter: brightness(50%) blur(0);
-	transition: .3s;
+	transition: 0.3s;
 }
