@@ -3,7 +3,7 @@ import styles from '@/styles/NavBar.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import dotdot from "@/functions/util/dotdot";
+import dotdot from '@/functions/util/dotdot';
 
 export default function NavBar() {
 	const router = useRouter();
@@ -17,14 +17,7 @@ export default function NavBar() {
 	return (
 		<div onClick={handleClick}>
 			<Link href={dotdot(currentUrl)}>
-				<Image
-					src="/icons/backbutton.svg"
-					className={styles.navbar}
-					alt="back button"
-					width="50"
-					height="50"
-					id="backbutton-svg"
-				></Image>
+				<Image src="/icons/backbutton.svg" className={styles.navbar} alt="back button" width="50" height="50" id="backbutton-svg"></Image>
 			</Link>
 		</div>
 	);

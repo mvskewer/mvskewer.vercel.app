@@ -46,7 +46,7 @@ const members: Member[] = [
 		shortBio: 'viewer recruit',
 		longBio: 'A former viewer writer, now a senior and not ready for life.',
 		deceased: true,
-		obituary: `C. Near was a very important news reporter who we are devastated to lose. She always kept us up to date with what was going on in the school and she provided near instantaneous coverage of current events. C. Near provided up-to-date information on the physics fair and then tragically informed the skewer staff about Carl Darwin's unfortunate passing in which she wrote an obituary for. C. Near wasn't only up to cover news stories. She also debated against Fullpetal on how to correctly define a sandwich! The Skewer staff is mourning the tragic loss of C. Near as she was a vital team member and news reporter. She will be missed.`
+		obituary: `C. Near was a very important news reporter who we are devastated to lose. She always kept us up to date with what was going on in the school and she provided near instantaneous coverage of current events. C. Near provided up-to-date information on the physics fair and then tragically informed the skewer staff about Carl Darwin's unfortunate passing in which she wrote an obituary for. C. Near wasn't only up to cover news stories. She also debated against Fullpetal on how to correctly define a sandwich! The Skewer staff is mourning the tragic loss of C. Near as she was a vital team member and news reporter. She will be missed.`,
 	},
 	{
 		name: 'Dr. Silly',
@@ -82,7 +82,7 @@ const members: Member[] = [
 			</>
 		),
 		deceased: true,
-		obituary: `Fullpetal Alchemist was an amazing reporter who wasn't afraid to write about challenging and controversial topics. He dove into the depths of the history of cafeteria food and why it is the way it is. He wasn't afraid to talk about SROs and how they can be beneficial to schools, and also uncovered the forbidden history of unofficial newspapers at Mounds View. He was also on the front lines last year when a student got attacked by another student armed with pepper spray. He was determined to uncover the truth and facts behind the attack and report them to the good people of Mounds View High School. Fullpetal wasn't just an excellent reporter and investigator, he also was well versed in poetry, writing many different genres to make classics like "Lunch" and "Parking". The loss of Fullpetal is weighing hard on our entire staff as he is considered to be one of the greatest Skewer staff members of all time. He will be missed.`
+		obituary: `Fullpetal Alchemist was an amazing reporter who wasn't afraid to write about challenging and controversial topics. He dove into the depths of the history of cafeteria food and why it is the way it is. He wasn't afraid to talk about SROs and how they can be beneficial to schools, and also uncovered the forbidden history of unofficial newspapers at Mounds View. He was also on the front lines last year when a student got attacked by another student armed with pepper spray. He was determined to uncover the truth and facts behind the attack and report them to the good people of Mounds View High School. Fullpetal wasn't just an excellent reporter and investigator, he also was well versed in poetry, writing many different genres to make classics like "Lunch" and "Parking". The loss of Fullpetal is weighing hard on our entire staff as he is considered to be one of the greatest Skewer staff members of all time. He will be missed.`,
 	},
 	{
 		name: 'J. Balvin',
