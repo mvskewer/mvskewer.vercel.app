@@ -62,16 +62,27 @@ body {
 	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-a:not(:hover) {
+a {
 	color: white;
 	text-decoration: none;
+}
+
+/* a:not(:hover) {
 	border-bottom: calc(1rem / 7) dotted;
+}
+
+a:hover {
+	border-bottom-style: solid;
+} */
+
+a:not(:hover):not(.no-grow) {
+	border-bottom: calc(1rem / 7) dotted;
+	font-size: 1rem;
 	transition: 50s;
 	/* I still have no idea how this only takes like half a second but oh well */
 }
 
-a:hover {
-	text-decoration: none;
+a:hover:not(.no-grow) {
 	border-bottom-style: solid;
 	/* 👀 */
 	font-size: 69rem;

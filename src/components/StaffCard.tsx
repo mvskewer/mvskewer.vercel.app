@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 export default function StaffCard(props: { img: string; name: string; children: JSX.Element }) {
 	return (
-		<div className={styles.card}>
-			<Link href={`/about/staff/${minimizeName(props.name)}`}>
+		<Link href={`/about/staff/${minimizeName(props.name)}`} className="no-grow">
+			<div className={styles.card}>
 				<Image src={`/staff/img/${props.img}.webp`} width="69" height="69" alt={`a picture of or for ${props.name}`} className={styles.img}></Image>
 				<p>
 					<b>{props.name}</b>
 				</p>
 				{props.children}
-			</Link>
-		</div>
+			</div>
+		</Link>
 	);
 }
