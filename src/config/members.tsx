@@ -37,36 +37,63 @@ const members: Member[] = [
 		name: 'Amio Koivunen',
 		positions: ['Writer'],
 		shortBio: "Resident shitposter and Juanma's #1 fan",
-		longBio: `Have sex
-Except 
-Except I put my pants in yes
-Pooped my beze bears
-Put my turner tan
-Or put my sperm to span
-Have sex
-Accept
-Busting
-Nutting
-Fool me, can't you?
-Fuller falafel lover
-Putting down the tiny best shoe
-Full of a lava lover
-Finding dust you turn your head, sure
-Fool her for love and love her
-I fornicate your fuming cashew
-Except
-I pulled my yeltsin years
-Pooped my best-a pants
-Pulled my tiny tang
-Or pulled my spender stan
-Have sex
-Except 
-Except
-I put my ants in, yes
-Pooped my beze bear
-Put my turner tan
-Or put my sperm to span
-Have sex!!!!!!! -Milo Morbius dance scene`,
+		longBio: (
+			<p>
+				Have sex Except
+				<br />
+				Except I put my pants in yes
+				<br />
+				Pooped my beze bears
+				<br />
+				Put my turner tan
+				<br />
+				Or put my sperm to span
+				<br />
+				Have sex
+				<br />
+				Accept
+				<br />
+				Busting
+				<br />
+				Nutting
+				<br />
+				Fool me, can&apos;t you?
+				<br />
+				Fuller falafel lover
+				<br />
+				Putting down the tiny best shoe
+				<br />
+				Full of a lava lover
+				<br />
+				Finding dust you turn your head, sure
+				<br />
+				Fool her for love and love her
+				<br />I fornicate your fuming cashew
+				<br />
+				Except
+				<br />I pulled my yeltsin years
+				<br />
+				Pooped my best-a pants
+				<br />
+				Pulled my tiny tang
+				<br />
+				Or pulled my spender stan
+				<br />
+				Have sex
+				<br />
+				Except <br />
+				Except
+				<br />I put my ants in, yes
+				<br />
+				Pooped my beze bear
+				<br />
+				Put my turner tan
+				<br />
+				Or put my sperm to span
+				<br />
+				Have sex!!!!!!! -Milo Morbius dance scene
+			</p>
+		),
 		deceased: false,
 	},
 	{
