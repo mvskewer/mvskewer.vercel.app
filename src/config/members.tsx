@@ -165,9 +165,9 @@ const members: Member[] = [
 		name: 'Quack',
 		positions: ['Writer'],
 		shortBio: '(they/them)',
-		longBio: "super cool and radical gamer B)",
-		deceased: false
-	}
+		longBio: 'super cool and radical gamer B)',
+		deceased: false,
+	},
 ];
 
 export default members;
