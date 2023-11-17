@@ -141,10 +141,10 @@ const members: Member[] = [
 		obituary: `Fullpetal Alchemist was an amazing reporter who wasn't afraid to write about challenging and controversial topics. He dove into the depths of the history of cafeteria food and why it is the way it is. He wasn't afraid to talk about SROs and how they can be beneficial to schools, and also uncovered the forbidden history of unofficial newspapers at Mounds View. He was also on the front lines last year when a student got attacked by another student armed with pepper spray. He was determined to uncover the truth and facts behind the attack and report them to the good people of Mounds View High School. Fullpetal wasn't just an excellent reporter and investigator, he also was well versed in poetry, writing many different genres to make classics like "Lunch" and "Parking". The loss of Fullpetal is weighing hard on our entire staff as he is considered to be one of the greatest Skewer staff members of all time. He will be missed.`,
 	},
 	{
-		name: 'J. Balvin',
+		name: 'Mamoru Mamora',
 		positions: ['Writer'],
-		shortBio: 'based character',
-		longBio: '17, student, saxophone player, magic the gathering officianado, one piece addict.',
+		shortBio: 'devious little scamp',
+		longBio: 'one of several on the skewer staff.',
 		deceased: false,
 	},
 	{
