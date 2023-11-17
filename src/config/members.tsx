@@ -39,7 +39,9 @@ const members: Member[] = [
 		shortBio: "Resident shitposter and Juanma's #1 fan",
 		longBio: (
 			<p>
-				Have sex Except
+				Have sex
+				<br />
+				Except
 				<br />
 				Except I put my pants in yes
 				<br />
