@@ -148,7 +148,7 @@ const members: Member[] = [
 		deceased: false,
 	},
 	{
-		name: 'Mike Rotchburns',
+		name: 'Brady Bangasser',
 		positions: ['Writer'],
 		shortBio: 'Local chainsaw expert',
 		longBio: <code>rm -rf /*</code>,
@@ -157,7 +157,7 @@ const members: Member[] = [
 	{
 		name: 'Fred the Møøse',
 		positions: ['Writer'],
-		shortBio: 'horoscoper, møøse, etc',
+		shortBio: 'Resident Psychic and Co-head in Training',
 		longBio: `A Swedish møøse who has citizenship in the US, Sweden, Canada, and Switzerland. Fred is the deranged astrologist of the Skewer who is a "Weird Al" Yankovic enjoyer and goblin believer. He also creates satire and other stuff sometimes. As Fred says: "It's pronounced bagel, not bagel."`,
 		deceased: false,
 	},
@@ -171,7 +171,7 @@ const members: Member[] = [
 	{
 		name: 'Themis',
 		positions: ['Writer'],
-		shortBio: '',
+		shortBio: 'Chief Editor',
 		longBio: 'Wowie. Much wow. Average kirby enjoyer.',
 		deceased: false,
 	},
