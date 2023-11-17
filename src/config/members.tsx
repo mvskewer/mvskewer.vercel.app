@@ -157,8 +157,8 @@ const members: Member[] = [
 	{
 		name: 'Fred the Møøse',
 		positions: ['Writer'],
-		shortBio: 'Horoscoper',
-		longBio: '',
+		shortBio: 'horoscoper, møøse, etc',
+		longBio: `A Swedish møøse who has citizenship in the US, Sweden, Canada, and Switzerland. Fred is the deranged astrologist of the Skewer who is a "Weird Al" Yankovic enjoyer and goblin believer. He also creates satire and other stuff sometimes. As Fred says: "It's pronounced bagel, not bagel."`,
 		deceased: false,
 	},
 ];
