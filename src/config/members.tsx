@@ -168,6 +168,13 @@ const members: Member[] = [
 		longBio: 'super cool and radical gamer B)',
 		deceased: false,
 	},
+	{
+		name: 'Themis',
+		positions: ['Writer'],
+		shortBio: '',
+		longBio: 'Wowie. Much wow. Average kirby enjoyer.',
+		deceased: false,
+	},
 ];
 
 export default members;
