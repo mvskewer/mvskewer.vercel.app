@@ -177,6 +177,13 @@ const members: Member[] = [
 		longBio: 'Wowie. Much wow. Average kirby enjoyer.',
 		deceased: false,
 	},
+	{
+		name: 'The Advocate',
+		positions: ['Writer'],
+		shortBio: '',
+		longBio: '',
+		deceased: false,
+	},
 ];
 
 export default members;
