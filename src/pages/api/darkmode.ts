@@ -42,7 +42,7 @@ the user is not able to switch to light mode. they are stuck in dark mode.`,
 		const output = response.choices[0].message.content?.replace(/^\n+/, '').replaceAll('"', ''); // for some reason it really likes quotes
 
 		if (!output) {
-			res.status(500).json({ output: "", error: 500 });
+			res.status(500).json({ output: 'Johnathan H. Doe', error: 500 });
 			return;
 		}
 
