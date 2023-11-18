@@ -39,7 +39,9 @@ const members: Member[] = [
 		shortBio: "Resident shitposter and Juanma's #1 fan",
 		longBio: (
 			<p>
-				Have sex Except
+				Have sex
+				<br />
+				Except
 				<br />
 				Except I put my pants in yes
 				<br />
@@ -173,6 +175,13 @@ const members: Member[] = [
 		positions: ['Writer'],
 		shortBio: 'Chief Editor',
 		longBio: 'Wowie. Much wow. Average kirby enjoyer.',
+		deceased: false,
+	},
+	{
+		name: 'The Advocate',
+		positions: ['Writer'],
+		shortBio: '',
+		longBio: '',
 		deceased: false,
 	},
 ];
