@@ -143,14 +143,15 @@ const members: Member[] = [
 		obituary: `Fullpetal Alchemist was an amazing reporter who wasn't afraid to write about challenging and controversial topics. He dove into the depths of the history of cafeteria food and why it is the way it is. He wasn't afraid to talk about SROs and how they can be beneficial to schools, and also uncovered the forbidden history of unofficial newspapers at Mounds View. He was also on the front lines last year when a student got attacked by another student armed with pepper spray. He was determined to uncover the truth and facts behind the attack and report them to the good people of Mounds View High School. Fullpetal wasn't just an excellent reporter and investigator, he also was well versed in poetry, writing many different genres to make classics like "Lunch" and "Parking". The loss of Fullpetal is weighing hard on our entire staff as he is considered to be one of the greatest Skewer staff members of all time. He will be missed.`,
 	},
 	{
-		name: 'Mamoru Mamora',
+		name: '10th level shadow wizard money sales associate',
 		positions: ['Writer'],
-		shortBio: 'devious little scamp',
-		longBio: 'one of several on the skewer staff.',
+		shortBio: '10th level shadow wizard. Formerly of the money gang, now a money sales associate. (secretly a goofy ahh kitty cat)',
+		longBio:
+			'when he when he the magical when wizard the shadow money wizard association with magic shadow when he the creature and he when he the (secret) men with he the awooga awooga he he wehn he hte and he yes the when. Lol! Lol! Lol! Lol! Lol! Lol! Good, You? Good, You? Good, You? i have no mouth and i must scream Good, You? Good, You?hGood, You?eGood, You?lGood, You?pGood, You?mGood, You?eGood, You? Lol! (sponsored by the shadow wizard money association (we enjoy casting various spells, and brewing potions)',
 		deceased: false,
 	},
 	{
-		name: 'Brady Bangasser',
+		name: 'Mike Rotchburns',
 		positions: ['Writer'],
 		shortBio: 'Local chainsaw expert',
 		longBio: <code>rm -rf /*</code>,

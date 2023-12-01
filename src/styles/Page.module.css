@@ -1,10 +1,10 @@
 .main {
-	width: 80%;
+	width: 90%;
 	margin: 20px auto 0 auto;
 	z-index: 0;
 	/* background: var(--background-color) */
 	color: white;
-	font-family: 'Fira Code';
+	font-family: 'Inter';
 	overflow-y: auto;
 	height: 88vh;
 }
@@ -16,7 +16,7 @@ h2.title {
 }
 
 .page {
-	padding: 30px;
+	padding: 5%;
 	margin: 10px;
 	line-height: 1.5rem;
 }
