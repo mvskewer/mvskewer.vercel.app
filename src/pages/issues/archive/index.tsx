@@ -18,6 +18,9 @@ export default function Home() {
 				<FileLink path="2023/November.pdf" name="November">
 					November
 				</FileLink>
+				<FileLink path="2023/December.pdf" name="December">
+					December
+				</FileLink>
 			</ul>
 		</Page>
 	);
