@@ -1,10 +1,11 @@
 .main {
+	/* font-size: 23px; */
 	width: 90%;
 	margin: 20px auto 0 auto;
 	z-index: 0;
 	/* background: var(--background-color) */
 	color: white;
-	font-family: 'Inter';
+	font-family: 'Roboto Slab', sans-serif;
 	overflow-y: auto;
 	height: 88vh;
 }
