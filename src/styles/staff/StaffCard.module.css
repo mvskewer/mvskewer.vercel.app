@@ -26,3 +26,13 @@ div.card:hover .img {
 	filter: brightness(50%) blur(0);
 	transition: 0.3s;
 }
+
+@media screen and (max-width: 500px) {
+	div.card {
+		width: 80vw;
+	}
+
+	.img {
+		filter: brightness(50%) blur(1px);
+	}
+}
