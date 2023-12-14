@@ -5,3 +5,10 @@ div.cardContainer {
 	justify-content: space-evenly;
 	align-content: stretch;
 }
+
+
+@media screen and (max-width: 800px) {
+	div.cardContainer {
+		width: 100%;
+	}
+}
