@@ -1,4 +1,5 @@
 import Page from '@/components/Page';
+import CardLink from '@/components/CardLink'
 import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,15 +10,18 @@ export default function Home() {
 		<Page description="The official website of The Skewer - access our article archives, staff bios, and more!" title="Home" h1="The Skewer" h2="The official website of The Skewer!">
 			<p>Welcome to our website! Here are some links to get you started:</p>
 			<br />
-			<p>
+			<CardLink>
 				<Link href="issues">Issues</Link>
-			</p>
-			<p>
+			</CardLink>
+			<CardLink>
 				<Link href="about">About</Link>
-			</p>
-			<p>
+			</CardLink>
+			<CardLink>
 				<Link href="apply">Join Our Team</Link>
-			</p>
+			</CardLink>
+			<CardLink>
+				<Link href="reader-request">Reader Request</Link>
+			</CardLink>
 		</Page>
 	);
 }
