@@ -1,5 +1,5 @@
-import Page from "@/components/Page";
-import Link from "next/link"
+import Page from '@/components/Page';
+import Link from 'next/link';
 
 export default function ReaderRequest() {
 	return (
@@ -10,5 +10,5 @@ export default function ReaderRequest() {
 			<p>hfasldkklfhjas</p>
 			<p>placeholder</p>
 		</Page>
-	)
+	);
 }

@@ -1,5 +1,5 @@
 import Page from '@/components/Page';
-import CardLink from '@/components/CardLink'
+import CardLink from '@/components/CardLink';
 import Script from 'next/script';
 import Image from 'next/image';
 import Link from 'next/link';
