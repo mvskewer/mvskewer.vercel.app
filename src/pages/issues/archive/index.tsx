@@ -4,7 +4,7 @@ import Page from '@/components/Page';
 export default function Home() {
 	return (
 		<Page description="an archive of all of our digital releases" title="Archive" h1="Archive" h2="An archive of all of our digital releases">
-			<p>sorted by month:</p>
+			<p>2023:</p>
 			<ul>
 				<FileLink path="2023/February.pdf" name="February">
 					February
@@ -20,6 +20,12 @@ export default function Home() {
 				</FileLink>
 				<FileLink path="2023/December.pdf" name="December">
 					December
+				</FileLink>
+			</ul>
+			<p>2024:</p>
+			<ul>
+				<FileLink path='2024/February.pdf' name="February">
+					February
 				</FileLink>
 			</ul>
 		</Page>
