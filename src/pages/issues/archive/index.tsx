@@ -24,7 +24,7 @@ export default function Home() {
 			</ul>
 			<p>2024:</p>
 			<ul>
-				<FileLink path='2024/February.pdf' name="February">
+				<FileLink path="2024/February.pdf" name="February">
 					February
 				</FileLink>
 			</ul>
