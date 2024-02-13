@@ -28,7 +28,7 @@ export default function Home() {
 			<br />
 			<p>Read our latest issue:</p>
 			<p>
-				<Link href="/issues/archive/2023/December.pdf" target="_blank">
+				<Link href="/issues/archive/2024/February.pdf" target="_blank">
 					Open in a new tab
 				</Link>
 				, or read it down below
