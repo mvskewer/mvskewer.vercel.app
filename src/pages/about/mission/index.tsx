@@ -18,15 +18,15 @@ export default function Home() {
 				bend the truth, or try to sway our readers by publishing information that isn’t true, and in our more negative articles, we will never use false information to try to deliberately attack something. Defamation is against the law, and just
 				morally wrong. Integrity is one of the main values behind the Skewer, and the most important. We within the Skewer pledge to uphold our integrity till the last days of this newspaper.
 			</p>
-			
+
 			<br />
 
 			<h2>INCLUSION</h2>
 			<hr />
 			<p>
 				While inclusion is second to integrity, that doesn&apos;t mean it is any less important. We within the Skewer try our best to include everyone, and every opinion. This means that when approaching arguments, we try our best to not be overly
-				biased. Our founder requires that we address both sides of an argument. This way our articles are more open to people who happen to disagree. (Unless it&apos;s a satirical article, then anything goes really). This also means that the Skewer will
-				never wrongfully discriminate against anyone, as we are all equal. Inclusion is essential to the mission of the Skewer, and it is just as important as integrity.
+				biased. Our founder requires that we address both sides of an argument. This way our articles are more open to people who happen to disagree. (Unless it&apos;s a satirical article, then anything goes really). This also means that the Skewer
+				will never wrongfully discriminate against anyone, as we are all equal. Inclusion is essential to the mission of the Skewer, and it is just as important as integrity.
 			</p>
 
 			<br />
