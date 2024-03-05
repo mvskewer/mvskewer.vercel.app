@@ -10,7 +10,7 @@ export default function Home() {
 			h3="If an article or a person within our newspaper does not meet these values, they will not be tolerated and be immediately withdrawn from our organization."
 			h4="If the Skewer ever violates one of these values, it will rescind from publishing as it has strayed from the vision of the founder."
 		>
-			<h3>If the Skewer ever violates one of these values, it will rescind from publishing as it has strayed from the vision of the founder.</h3>
+			h
 		</Page>
 	);
 }
